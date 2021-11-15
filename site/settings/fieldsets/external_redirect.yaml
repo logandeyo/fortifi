@@ -1,0 +1,19 @@
+sections:
+  main:
+    display: Main
+    fields:
+      external_url:
+        type: text
+        instructions: This page will be redirected to this external url
+        localizable: true
+        display: External Url
+        validate: url
+  sidebar:
+    display: Sidebar
+    fields:
+      partial_page_metadata:
+        fieldset: page_metadata
+        type: partial
+        display: 'Page Metadata'
+taxonomies: true
+title: External Redirect

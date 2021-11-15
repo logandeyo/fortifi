@@ -1,0 +1,12 @@
+node_modules
+tmp
+public
+.DS_Store
+*.log
+static
+
+
+######## DEV CONVENIENCE ########
+## It's nice to be able to make user-specific build scripts, for example, and not have to do the stash dance.
+# usage in filename: [deploy-remote-jenkins-tester.ignore.cmd]
+*.ignore.*

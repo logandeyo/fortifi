@@ -1,0 +1,50 @@
+######## GENERAL IGNORES #######
+# ignore logs, OS cache files
+
+*.log
+
+local/cache/*
+local/storage/*
+local/temp/*
+
+node_modules/
+bower_components/
+installer.php
+
+
+# generated images produced by Glide cache:
+_media-cache
+
+
+######## MAC/IDE JUNK #######
+.DS_Store
+.env
+.idea/
+__MACOSX
+.vs/
+.svn/
+.idea/
+*.suo
+*.sln.DotSettings.user
+*.csproj.user
+_Generated.cs
+
+
+######## MISC IGNORES ########
+
+
+
+######## WHEEL + front end ########
+
+site/themes/*/css
+site/themes/*/images
+site/themes/*/js
+
+wheel/public/
+
+/images/
+
+######## DEV CONVENIENCE ########
+## It's nice to be able to make user-specific build scripts, for example, and not have to do the stash dance.
+# usage in filename: [deploy-remote-jenkins-tester.ignore.cmd]
+*.ignore.*

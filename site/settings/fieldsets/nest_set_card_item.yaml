@@ -1,0 +1,32 @@
+sections:
+  main:
+    display: Main
+    fields:
+      heading:
+        type: text
+        display: Heading
+      content:
+        settings: 'Standard - Blurb'
+        restrict_assets: true
+        type: redactor
+        display: Content
+        width: 66
+        container: main
+        folder: documents
+      icon:
+        container: main
+        folder: card-deck__icons
+        restrict: true
+        max_files: 1
+        mode: grid
+        type: assets
+        width: 33
+        display: Icon
+      partial_button:
+        fieldset: button
+        type: partial
+        display: 'Button (optional)'
+        instructions: 'optional jazz, will this show up?'
+taxonomies: false
+title: '_nest-set Card Item'
+hide: true

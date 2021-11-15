@@ -1,0 +1,40 @@
+.rich-text {
+  & strong {
+    font-weight: var(--font-weight--bold);
+  }
+
+  & em {
+    font-style: italic;
+  }
+
+  & sub,
+  & sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+
+  sup {
+    /* Move the superscripted text up */
+    top: -0.5em;
+  }
+
+  sub {
+    /* Move the subscripted text down, but only
+       half as far down as the superscript moved up */
+    bottom: -0.25em;
+  }
+
+  hr{
+    border: 1px solid #F2F2F2;
+    height: 1px;
+    margin: 2rem 0;
+  }
+
+  ol, ul {
+    list-style: disc;
+    padding-left: 1em;
+  }
+
+}

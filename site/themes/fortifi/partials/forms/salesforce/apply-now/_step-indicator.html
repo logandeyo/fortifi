@@ -1,0 +1,18 @@
+<div class="wrapper wrapper--relative rhythm">
+  <div class="steps-decor">
+    <div class="wrapper wrapper--small">
+      <h3 class="heading heading--h3 text-align--center">{{ step_header or 'STEPS' }}</h3>
+      <div class="steps">
+
+        {{ foreach:total_steps_to_indicate as="step_index" }}
+          <div class="card steps__item  rhythm">
+            <div class="steps__heading-halo {{ if step_index==current_step }} steps__active{{ /if }}" >
+              <h3 class="heading heading--h3 steps__heading  ">{{ step_index }}</h3>
+            </div>
+          </div>
+        {{ /foreach:total_steps_to_indicate }}
+
+      </div><!--/ steps -->
+    </div><!--/ wrapper small -->
+  </div><!--/ steps-decor -->
+</div>

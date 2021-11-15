@@ -1,0 +1,13 @@
+.text {
+  &--align-center {
+    text-align: center;
+  }
+
+  &--small {
+    font-size: var(--text-size--small);
+  }
+
+  &--weight-bold {
+    font-weight: var(--font-weight--bold);
+  }
+}

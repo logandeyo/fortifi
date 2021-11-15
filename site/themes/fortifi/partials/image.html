@@ -1,0 +1,11 @@
+{{# ensure proper rendering tag for svg/'standard' image #}}
+
+{{ asset:source }}
+    {{ if extension == "svg" }}
+        <span class="{{ class }}">
+          {{ source | output }}
+        </span>
+    {{ else }}
+        <img src="{{ url }}" alt="{{ alt }}" class="{{ class }}" />
+    {{ /if }}
+{{ /asset:source }}

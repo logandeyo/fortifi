@@ -1,0 +1,46 @@
+.global-header {
+  align-items: center;
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-gray-5);
+  height: var(--header-height-sm);
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: var(--zindex--nav);
+
+  @media (--medium) {
+    height: var(--header-height-lg);
+  }
+
+  &__wrap {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 200px 1fr 70px;
+    height: var(--header-height-sm);
+
+    @media (--medium) {
+      grid-template-columns: 200px 1fr;
+      height: 7rem;
+    }
+  }
+
+  &__contact {
+    background-color: var(--color-surf);
+    display: none;
+    padding: 0.5rem 0;
+
+    @media (--medium) {
+      display: block;
+    }
+
+    nav {
+      text-align: right;
+    }
+
+    a {
+      color: var(--color-white);
+      margin: 0 0 0 2rem;
+    }
+  }
+}

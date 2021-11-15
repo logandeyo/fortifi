@@ -1,0 +1,73 @@
+.alert-modal {
+  background-color: rgb(99, 99, 99, 0.75);
+  height: 100vh;
+  left: 0;
+  position: sticky;
+  overflow: hidden;
+  top: 0;
+  width: 100vw;
+  z-index: var(--zindex--modal);
+
+  &.is-hidden {
+    display: none;
+  }
+
+  &__body {
+    background-color: white;
+    margin: 8rem auto 0;
+    max-height: calc(100vh - 8rem);
+    max-width: 40rem;
+    padding: 1rem;
+    position: relative;
+  }
+
+  &__close {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 3rem;
+    padding: 0;
+    position: absolute;
+    right: 1rem;
+    width: 3rem;
+
+    &::before {
+      background-color: var(--color-lime);
+      content: '';
+      display: block;
+      position: absolute;
+      transform-origin: center;
+      transform: rotate(45deg);
+      top: 1.375rem;
+      left: 0.5rem;
+      height: 3px;
+      width: 2rem;
+    }
+
+    &::after {
+      background-color: var(--color-lime);
+      content: '';
+      display: block;
+      position: absolute;
+      transform-origin: center;
+      transform: rotate(135deg);
+      top: 1.375rem;
+      right: 0.5rem;
+      height: 3px;
+      width: 2rem;
+    }
+  }
+
+  &__copy {
+    padding: 2rem 3rem 3rem;
+  }
+
+  &__header {
+    background-color: var(--color-surf);
+    border-bottom: var(--color-text) solid 1px;
+    height: 3rem;
+    padding: 0 0.5rem;
+    text-align: right;
+    width: 100%;
+  }
+}

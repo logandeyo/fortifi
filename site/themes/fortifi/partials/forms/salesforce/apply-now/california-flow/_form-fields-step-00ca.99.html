@@ -1,0 +1,38 @@
+{{#
+via :: https://projects.invisionapp.com/d/main#/console/18021689/405893139/preview
+#}}
+
+<div id="ca-modal-10" class="modal modal-california modal--consent apply-now__ca-modal-10 is-hidden">
+  <div class="modal__overlay js-prev-pg-button" tabIndex="-1" data-a11y-dialog-hide data-skip-to-step="0"></div>
+  <div class="modal__dialog" role="alertdialog">
+    {{ partial:authoring_field_helper reference_label="ca_modal_99" internal_name="{ca_modal_99_internal_naming}" }}
+    <div class="modal__heading">
+      <a href="#" class="brand">
+        <img src="/images/fortifi-logo.svg" alt="FortiFi logo" >
+      </a>
+      <button type="button" data-a11y-dialog-hide class="modal__close js-prev-pg-button" data-skip-to-step="0" aria-label="Close this dialog window"></button>
+    </div>
+    <div class="modal__copy rhythm">
+
+      <div class="legal-text rich-text rhythm">
+        {{ ca_modal_99 }}
+      </div>
+      <div class="rich-text text--small rhythm">
+        {{ ca_modal_99_acknowledgement }}
+      </div>
+      <fieldset class="modal__footer form--validate apply-now-form__fieldset is-hidden" id="ca-consent-10">
+
+        {{ if ca_modal_99_checkbox_salesforceid }}
+          <div class="modal__consent">
+            <div class="input__group">
+              <input class="input" id="{{ ca_modal_99_checkbox_salesforceid }}" name="{{ ca_modal_99_checkbox_salesforceid }}" type="checkbox" value="1" {{ if ca_modal_99_checkbox_is_required }}required{{/if }}/>
+              <label class="label" for="{{ ca_modal_99_checkbox_salesforceid }}">{{ ca_modal_99_checkbox_label }}</label>
+            </div>
+          </div>
+        {{ /if }}
+
+        <button class="button button--primary button--size-default modal__cta modal__cta--consent js-next-pg-button" type="button" data-skip-to-step="16">Next</button>
+      </fieldset>
+    </div>
+  </div>
+</div>

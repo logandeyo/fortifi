@@ -1,0 +1,29 @@
+
+<section class="wrapper">
+  <div class="wrapper wrapper--small">
+    <h1 class="heading heading--h2-legal">Sitemap</h1>
+    <div class="standard-rte-content rhythm rich-text sitemap">
+      <ul>
+      {{ nav from="/" include_home="true" include_in_dynamic_sitemap:isnt="false" scope="tag" }}
+          <li>
+            <a href="{{ tag:navigation_link or url  }}">{{ tag:navigation_title or title }}</a>
+          </li>
+        {{ if mount }}
+          {{ collection :from="mount" include_in_sitemap_xml:isnt="false" }}
+            {{ if first }}<ul>{{ /if }}
+            <li>
+              <a href="{{ tag:navigation_link or url  }}">{{ tag:navigation_title or title }}</a>
+            </li>
+            {{ if last }}</ul>{{ /if }}
+          {{ /collection }}
+        {{ /if }}
+        {{ if children }}
+          <ul>
+            {{ *recursive children* }}
+          </ul>
+        {{ /if }}
+      {{ /nav }}
+      </ul>
+    </div>
+  </div>
+</section>

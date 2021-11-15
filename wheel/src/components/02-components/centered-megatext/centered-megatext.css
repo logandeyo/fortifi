@@ -1,0 +1,12 @@
+.centered-megatext {
+  font-size: 1.6rem;
+  font-weight: var(--font-weight--bold);
+  line-height: 1.25;
+  padding: 2rem 0;
+  text-align: center;
+
+  @media (--medium) {
+    margin-bottom: 2rem;
+    padding: 3rem 0;
+  }
+}

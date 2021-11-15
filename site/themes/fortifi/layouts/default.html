@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+  {{ session:set current_fqdn='{ current_url remove_right="{current_uri}" }' }}
+  {{ MaintenancePassword }}
+<head>
+
+  <title>{{ browser_title or title }} | {{ og_site_name }}</title>
+
+  {{#   Basics Tags   #}}
+  <meta charset="utf-8">
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  {{ partial:layout/htmlhead_robots }}
+
+  {{#   Linked assets   #}}
+  {{ theme:css src="styles" tag="true" cache_bust="true" }}
+  <link href="https://fonts.googleapis.com/css?family=Archivo:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="red">
+  <meta name="msapplication-TileColor" content="#da532c">
+
+  <meta name="description" content="{{ meta_description }}">
+
+  {{ partial:layout/htmlhead_opengraph }}
+
+  {{ partial:layout/htmlhead_json-ld }}
+
+  {{ partial:layout/htmlhead_trackers }}
+
+</head>
+
+<body>
+  <main id="content" role="main">
+
+    {{ partial:layout/header }}
+
+    {{ template_content }}
+
+    {{ partial:layout/footer }}
+  </main>
+
+  {{ theme:js src="bundle" tag="true" cache_bust="true" }}
+
+</body>
+
+</html>

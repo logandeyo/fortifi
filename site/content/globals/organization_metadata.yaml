@@ -1,0 +1,18 @@
+name: Fortifi
+business_id: 'https://hq.fortifi.com/'
+address_streetaddress: '200 Spectrum Center Drive'
+address_streetaddress_unit: 'Suite 1470'
+address_addresslocality: Irvine
+address_addressregion: CA
+address_addresscountry: US
+address_postalcode: '92618'
+geo_latitude: '33.652200'
+geo_longitude: '-117.747720'
+telephone: 1.858.345.2000
+company_logo: /assets/img/favicons/footer-image.png
+facebook_url: 'https://www.facebook.com/FortiFiFinancial/'
+instagram_url: 'https://www.instagram.com/fortifi_financial/'
+linkedin_url: 'https://www.linkedin.com/company/fortififinancial/'
+fieldset: global_organization_metadata
+title: 'Organization Metadata'
+id: cc959deb-37cd-4bc7-bb05-61c0a15778ca

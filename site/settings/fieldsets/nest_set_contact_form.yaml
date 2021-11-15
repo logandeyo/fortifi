@@ -1,0 +1,30 @@
+sections:
+  main:
+    display: Main
+    fields:
+      heading:
+        type: text
+        display: Heading
+        default: Contact us
+      content:
+        settings: 'Basic - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: Content (optional) intro text
+      section_field_labels:
+        type: section
+        instructions: 'Control the label text for each field on the form'
+        display: 'Field Labels'
+
+      section_form_response:
+        type: section
+        display: 'Success Response'
+      thank_you_page:
+        max_items: 1
+        mode: panes
+        type: pages
+        display: 'Thank You Page'
+        instructions: 'Specify where to redirect the user after they successfully fill out the form'
+taxonomies: false
+hide: true
+title: '_nest-set Contact Form'

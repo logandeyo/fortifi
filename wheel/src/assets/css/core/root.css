@@ -1,0 +1,80 @@
+html,
+body {
+  color: var(--color-text);
+  font-family: var(--type-font-family);
+  font-size: var(--type-font-size);
+  line-height: var(--type-line-height);
+
+  * {
+    box-sizing: border-box;
+
+    &.is-hidden {
+      display: none;
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: var(--header-height-sm);
+
+  @media (--medium) {
+    padding-top: var(--header-height-lg);
+  }
+
+  &.is-locked {
+    overflow: hidden;
+    height: 100vh;
+  }
+}
+
+::selection {
+  background-color: var(--color-sky);
+  color: #fff;
+}
+
+a {
+  color: var(--color-lime);
+  cursor: pointer;
+  text-decoration: none;
+
+  &:--haf {
+    color: var(--color-text);
+    text-decoration: underline;
+  }
+
+  &.has-brand-icon {
+    background-image: url(/images/caret_small.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    font-weight: var(--font-weight--bold);
+    margin: 0.5rem 0;
+    padding: 0.5rem 2rem 0.5rem 0;
+  }
+
+  &.login {
+    background-image: url(/images/icon_login-black.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 2rem 0 0;
+    padding: 2rem 0 0.5rem;
+
+    @media (--medium) {
+      background-image: url(/images/icon_login.svg);
+      background-position: right center;
+      background-repeat: no-repeat;
+      margin: 0.5rem inherit;
+      padding: 0.5rem 2rem 0.5rem 0;
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}

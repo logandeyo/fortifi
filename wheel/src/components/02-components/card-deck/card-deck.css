@@ -1,0 +1,74 @@
+.card-deck {
+  &__layout {
+    display: grid;
+    grid-gap: 3rem;
+    justify-content: space-around;
+    margin-top: 3rem;
+
+    @media (--medium) {
+      &__3col {
+        grid-template-columns: 1fr 1fr 1fr;
+       }
+
+      &__2col {
+         grid-template-columns: 1fr 1fr;
+       }
+    }
+  }
+
+  &__testimonial {
+    color: var(--color-white);
+    margin: 4rem auto;
+    max-width: 876px;
+
+    p {
+      font-size: 1.6rem;
+    }
+
+    figcaption {
+      margin: 1rem 0 2rem;
+      opacity: 0.6;
+    }
+  }
+
+  &__cta {
+    margin-top: 3rem;
+
+    @media (--medium) {
+      margin-top: 6rem;
+    }
+  }
+
+  &__item {
+    background-color: var(--color-white);
+    color: var(--color-text);
+    padding: 2rem;
+    position: relative;
+    text-align: left;
+
+    .heading {
+      padding-right: 60px;
+    }
+  }
+
+  &__icon-box {
+    display: inline-block;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    width: 40px;
+  }
+}
+
+.card-deck-wrapper {
+  background-color: var(--color-navy);
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  text-align: center;
+
+  &--has-margin-bottom {
+    @media (--medium) {
+      margin-bottom: 6rem;
+    }
+  }
+}

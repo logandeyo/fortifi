@@ -1,0 +1,64 @@
+<div class="wrapper wrapper--relative rhythm">
+<figure class="media-object">
+
+  {{ if video }}
+    {{ if video | is_embeddable }}
+      <!-- Youtube and Video -->
+      <div class="media-object__figure">
+        <div class="video-wrapper">
+          <iframe src="{{ video | embed_url }}" class="media-object__image video-height" ></iframe>
+        </div>
+
+        {{ if secondary_video_url && secondary_video_link_text }}
+          <a href="{{ secondary_video_url }}" class="link link--primary" target="_blank">
+            {{ secondary_video_link_text }}
+          </a>
+        {{ /if }}
+
+      </div>
+      {{ else }}
+        <!-- Other HTML5 video types -->
+        <div class="media-object__figure">
+          <div class="video-wrapper">
+            <video src="{{ video | embed_url }}" class="media-object__image  video-height" ></video>
+          </div>
+
+          {{ if secondary_video_url && secondary_video_link_text }}
+            <a href="{{ secondary_video_url }}" class="link link--primary" target="_blank">
+              {{ secondary_video_link_text }}
+            </a>
+          {{ /if }}
+
+        </div>
+    {{ /if }}
+
+
+  {{ else }}
+    {{ partial:image source="{image}" class="media-object__image" }}
+  {{ /if }}
+
+  <figcaption class="media-object__caption">
+    <div class="rhythm rhythm--large rich-text rich-text--large">
+      {{ if heading }}
+        <h2 class="heading heading--h2">{{ heading }}</h2>
+      {{ /if }}
+
+      {{ content }}
+    </div>
+    <!--/ rich-text -->
+
+    {{ if cta_link }}
+      {{ relate:cta_link }}
+        <div class="media-object__cta">
+          <a href="{{ url }}" class="button button--link button--primary button--size-default">
+            {{ cta_link_text or title }}
+          </a>
+        </div>
+        <!--/ __cta -->
+      {{ /relate:cta_link }}
+    {{ /if }}
+
+  </figcaption>
+</figure>
+<!--/ media-object -->
+</div>

@@ -1,0 +1,51 @@
+.heading {
+  font-family: var(--font-stack--default);
+  font-range: 320px 1280px; /* viewport widths between which font-size is fluid */
+  font-size: 2em;
+  font-weight: var(--font-weight--bold);
+  line-height: 1.2em;
+
+  &--h1 {
+    font-size: responsive 2.4rem 3.333333333333333rem; /* min-size, max-size */
+  }
+
+  &--h1-major {
+    color: var(--color-navy);
+    font-size: responsive 2.4rem 6.666666666666667rem;
+  }
+
+  &--h1-legal {
+     font-size: responsive 2.4rem 3.333333333333333rem; /* min-size, max-size */
+     margin-bottom:1rem;
+     padding-top:5rem;
+   }
+
+  &--h2 {
+    font-size: responsive 1.125rem 2.4rem;
+  }
+
+  &--h2-legal {
+     font-size: responsive 1.125rem 2.4rem;
+     margin-bottom:1rem;
+     padding-top:5rem;
+   }
+
+  &--h3 {
+    font-size: responsive 1rem 1.6rem;
+  }
+
+  &--h4 {
+    font-size: responsive 1rem 0.8666666rem;
+    text-transform: uppercase;
+  }
+
+  &--h5 {
+    font-size: 0.8666666rem;
+    font-weight: bold;
+  }
+
+  &--h6 {
+    font-size: 0.8666666rem;
+    font-weight: bold;
+  }
+}

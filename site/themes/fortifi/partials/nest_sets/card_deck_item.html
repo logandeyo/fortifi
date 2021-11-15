@@ -1,0 +1,22 @@
+<div class="card-deck__item rhythm">
+  <div class="card-deck__icon-box">
+    {{ partial:image source="{icon}" class="card__icon-box-img" }}
+  </div>
+
+  <div class="rhythm rich-text">
+    <h3 class="heading heading--h3">{{ heading }}</h3>
+    {{ content }}
+
+    {{ if cta_link }}
+      {{ relate:cta_link }}
+        <p>
+          <a href="{{ url }}" class="has-brand-icon">
+            {{ cta_link_text }}
+          </a>
+        </p>
+      {{ /relate:cta_link }}
+    {{ /if }}
+
+  </div>
+</div>
+

@@ -1,0 +1,27 @@
+headline:
+  replace:
+    \\
+    <br />
+  remove_right: .
+  markdown: true
+  strip_tags: p
+
+url_strip_https:
+  remove_right: /
+  replace:
+    https://
+
+url_strip_http:
+  remove_right: /
+  replace:
+    http://
+
+url_strip_www:
+  remove_right: /
+  replace:
+    www.
+
+tel_formatting:
+  replace:
+    .
+

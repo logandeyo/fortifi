@@ -1,0 +1,15 @@
+sections:
+  main:
+    display: Main
+    fields:
+      heading:
+        type: text
+        display: Heading
+      content:
+        settings: 'Basic - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: Content
+taxonomies: false
+hide: true
+title: '_nest-set Stats Card'

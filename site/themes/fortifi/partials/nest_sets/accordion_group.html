@@ -1,0 +1,12 @@
+
+<div class="wrapper wrapper--small">
+  <div class="accordion-group">
+
+    <h2 class="heading heading--h1"><span id="jump-to-{{ heading | slugify }}" class="anchor-target"></span>{{ heading }}</h2>
+    {{ accordion_group }}
+     {{ partial src="nest_sets/{type}" }}
+    {{ /accordion_group }}
+
+  </div><!--/ accordion -->
+</div> <!--/ wrapper--small -->
+

@@ -1,0 +1,48 @@
+sections:
+  main:
+    display: Main
+    fields:
+      heading:
+        type: text
+        display: Heading
+      content:
+        settings: Standard
+        restrict_assets: true
+        type: redactor
+        width: 50
+        display: Content
+        container: main
+        folder: documents
+      image:
+        container: main
+        folder: media-object-components
+        restrict: false
+        max_files: 1
+        type: assets
+        width: 50
+        display: Image
+        mode: grid
+        hide_when:
+          video: 'not null'
+      partial_button:
+        fieldset: button
+        type: partial
+        display: 'Button (optional)'
+        instructions: 'optional jazz, will this show up?'
+      video:
+        type: video
+        instructions: 'Will override **[Image]** if video selected'
+        display: 'Video URL'
+      secondary_video_url:
+        type: text
+        instructions: 'Will be used to create link for an alternate video'
+        width: 50
+        display: 'Secondary Video Url'
+      secondary_video_link_text:
+        type: text
+        instructions: 'Text used to link **[Secondary Video Url]**'
+        width: 50
+        display: 'Secondary Video Link Text'
+taxonomies: true
+hide: true
+title: '_nest-set Media-Object'

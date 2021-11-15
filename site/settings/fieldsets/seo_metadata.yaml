@@ -1,0 +1,47 @@
+sections:
+  seo_metadata:
+    display: 'SEO Metadata'
+    fields:
+      section_seo_metadata:
+        type: section
+        instructions: 'Meta elements provide information about the web page, which can be used by search engines to help categorize the page correctly.'
+        display: 'SEO Metadata'
+      browser_title:
+        type: text
+        instructions: 'Title tags are displayed on the browser tab as well as search engine results pages (SERPs) as the clickable headline for a given result, and are important for usability, SEO, and social sharing. The title tag of a web page is meant to be an accurate and concise description of a page''s content.'
+        display: 'Browser Title'
+      meta_description:
+        type: textarea
+        instructions: 'Concise summary of page content - between 50–300 characters'
+        display: 'Meta Description'
+      robots_checklist:
+        options:
+          noindex: 'noindex - (Do not show this page in search results.)'
+          nofollow: 'nofollow - (Do not follow the links on this page.)'
+          noarchive: 'noarchive - (Do not show a cached link in search results.)'
+          nosnippet: 'nosnippet - (Do not show a text snippet or video preview in the search results for this page.)'
+          notranslate: 'notranslate - (Do not offer translation of this page in search results.)'
+          noimageindex: 'noimageindex - (Do not index images on this page.)'
+        type: checkboxes
+        instructions: |
+          Defines a page-specific approach to controlling how an individual page should be indexed and served to users in search results.
+
+          <i>LEAVE BLANK if page should be indexed by google etc…, this is the default behaviour.</i>
+
+          <a href="https://developers.google.com/search/reference/robots_meta_tag#valid-indexing-serving-directives" target="_blank">↗ Full documentation⇗</a>
+        display: 'Robots Checklist'
+      include_in_sitemap_xml:
+        type: toggle
+        instructions: 'For SEO Bots - Include in sitemap.xml to help ensure Google, etc… find your content.'
+        display: 'Include In Sitemap.xml'
+        default: true
+        width: 50
+      include_in_dynamic_sitemap:
+        type: toggle
+        instructions: 'For Humans - Include in list of links to help human users find your content'
+        width: 50
+        display: 'Include in Dynamic Sitemap'
+        default: true
+taxonomies: false
+title: '_SEO Metadata'
+hide: true

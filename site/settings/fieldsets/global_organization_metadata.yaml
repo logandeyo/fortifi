@@ -1,0 +1,107 @@
+sections:
+  disclaimer:
+    display: Disclaimer
+    fields:
+      '-important-':
+        type: section
+        instructions: |
+          This globals-data is not content.
+
+
+          Editing these fields will have consquenses as to how the business is [listed on google search/map results](https://www.google.com/search?q=Turn+Agency&stick=H4sIAAAAAAAAAONgecRYyS3w8sc9YamCSWtOXmPM4uIKzsgvd80rySypFArgYoOyVLgEpXj10_UNDdMMjQpSkg2KNBik-LlQhaQUlLh4J7U6Son-KVm_XUuIs_hN862rx3eECIb92xD7f2XnXiWupn0rDrGxcDAKMPAAAFlPRy5-AAAA&sa=X&ved=2ahUKEwid19DM6YvfAhU3HTQIHTzEC5MQ6RMwDnoECAkQBA&biw=1639&bih=1432) etc…
+        display: ­­­¡-Important-!
+  main:
+    display: 'Business Location'
+    fields:
+      section_required_properties:
+        type: section
+        display: 'Required Properties'
+      name:
+        type: text
+        instructions: 'Business name.'
+        display: name
+      business_id:
+        type: text
+        instructions: 'Globally unique ID of the specific business location in the form of a URL. The ID should be stable and unchanging over time. Google Search treats the URL as an opaque string and it does not have to be a working link. If the business has multiple locations, make sure the @id is unique for each location.'
+        display: '@id'
+        validate: required
+      address_streetaddress:
+        type: text
+        instructions: 'Street number, street name'
+        width: 66
+        display: address.streetAddress
+      address_streetaddress_unit:
+        type: text
+        instructions: 'unit number (if applicable).'
+        width: 33
+        display: address.streetAddress  (cont.)
+      address_addresslocality:
+        type: text
+        instructions: City
+        width: 50
+        display: address.addressLocality
+      address_addressregion:
+        type: text
+        instructions: 'State or province, if applicable.'
+        width: 50
+        display: address.addressRegion
+      address_addresscountry:
+        type: text
+        instructions: 'The 2-letter ISO 3166-1 alpha-2 country code.'
+        display: address.addressCountry
+        width: 50
+      address_postalcode:
+        type: text
+        instructions: 'Postal or zip code.'
+        width: 50
+        display: address.postalCode
+      section_recommended_properties:
+        type: section
+        display: 'Recommended Properties'
+      geo_latitude:
+        type: text
+        instructions: 'The latitude of the business location. The precision should be at least 5 decimal places.'
+        display: geo.latitude
+        width: 50
+      geo_longitude:
+        type: text
+        instructions: 'The longitude of the business location. The precision should be at least 5 decimal places.'
+        display: geo.longitude
+        width: 50
+      telephone:
+        type: text
+        instructions: 'A business phone number meant to be the primary contact method for customers. Be sure to include the country code and area code in the phone number.'
+        display: telephone
+      company_logo:
+        container: main
+        folder: img/favicons
+        restrict: true
+        max_files: 1
+        mode: grid
+        type: assets
+        instructions: 'Specify the image Google Search uses for your organization''s logo in Search results and in the Knowledge Graph. Google Search uses the markup in the use case example to recognize the image to use as the organization’s logo. This ensures that, when possible, the image appears in search results about the company. Markup like this is a strong signal to Google Search algorithms to show this image in Knowledge Graph displays.'
+        display: 'Company Logo (.jpg, .png, .gif)'
+  social_profiles:
+    display: 'Social Profiles'
+    fields:
+      section_social_profiles:
+        type: section
+        instructions: 'Use markup on your official website to add your social profile information to a Google Knowledge panel. Knowledge panels prominently display your social profile information in some Google Search results.'
+        display: 'Social Profiles'
+      facebook_url:
+        type: text
+        display: Facebook
+      twitter_url:
+        type: text
+        display: Twitter
+      instagram_url:
+        type: text
+        display: Instagram
+      youtube_url:
+        type: text
+        display: YouTube
+      linkedin_url:
+        type: text
+        display: LinkedIn
+title: '__global Organization Metadata'
+hide: true

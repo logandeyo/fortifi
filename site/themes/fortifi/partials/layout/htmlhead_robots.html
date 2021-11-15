@@ -1,0 +1,5 @@
+{{ if robots_checklist }}
+  <meta name="robots" content="{{ robots_checklist | list }}">
+{{ else }}
+  <meta name="robots" content="index, follow">
+{{ /if }}

@@ -1,0 +1,22 @@
+title: 'Main Assets'
+path: assets
+url: /assets
+assets:
+  documents/2021-7-9-paper-opt-out.pdf:
+    title: 'FortiFi Opt-Out Agreement (English)'
+  documents/2021-7-9-paper-opt-out_spanish.pdf:
+    title: 'FortiFi Opt-Out Agreement (Spanish)'
+  documents/fortifi-program-handbook-fl-20200423.1.pdf:
+    title: '2020-1-22_FortiFi Florida Program Handbook'
+  documents/california-pricing-products_2021-3-22_2.pdf:
+    title: '2021-3-22_FortiFi California Eligible Improvements'
+  documents/florida-fortifi-pricing-product-list-2021-3-24.pdf:
+    title: '2021-3-24_FortiFI Florida Eligible Improvements'
+  documents/fortifi_interim_cscda-program-handbook-v782020_.pdf:
+    title: '2020-1-15_FortiFi California Program Handbook'
+  documents/2021_4_23_fortifi_ccpa-privacy-notice-for-california-residents_consumers_200508_.pdf:
+    title: 'English CCPA Privacy Notice for California Residents (Consumers)'
+  documents/spa-fortifi-ccpa-privacy-notice-for-california-residents-consumers_.pdf:
+    title: 'Spanish CCPA Privacy Notice for California Residents (Consumers)'
+  documents/cscda-program-handbook-20210914.1.pdf:
+    title: '2021-9-14_FortiFi California Program Handbook'

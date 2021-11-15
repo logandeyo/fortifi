@@ -1,0 +1,18 @@
+sections:
+  main:
+    display: Main
+    fields:
+      heading:
+        type: text
+        display: Heading
+        instructions: (optional)
+      content:
+        settings: Standard
+        restrict_assets: true
+        type: redactor
+        display: Content
+        container: main
+        folder: documents
+taxonomies: false
+title: '_nest-set Centered RTE Content'
+hide: true

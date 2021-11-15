@@ -1,0 +1,134 @@
+{{#
+via :: https://projects.invisionapp.com/d/main#/console/18021689/402228150/preview
+#}}
+
+{{# ---------------
+NOT going to show the "Property Owned by" DDL found on Step02 because we already showed it and rerendering it here
+would be problematic -> data loss / extra dev time etc…
+#}}
+
+<fieldset class="apply-now-form__fieldset form--validate is-hidden" id="apply-now-form__02a">
+  {{ partial:forms/salesforce/apply-now/_step-indicator current_step="2" }}
+
+  <div class="form__two-col">
+    <div class="col">
+      <h3 class="heading heading--h3">First Property Owner</h3>
+    </div>
+    <div class="col apply-now__second-owner">
+      <h3 class="heading heading--h3">Second Property Owner</h3>
+    </div>
+  </div>
+
+
+  <div class="form__two-col">
+    <div class="col">
+      <div class="input__group">
+        <label for="first_name">First Name</label>
+        <input id="first_name" value="{{ get:first_name | sanitize }}" maxlength="40" name="first_name" size="20" type="text" class="input input--text" required/>
+      </div>
+    </div>
+    <div class="col apply-now__second-owner">
+      <div class="input__group">
+        <label for="00N5G00000VL3LU">First Name</label>
+        <input  id="00N5G00000VL3LU" maxlength="50" name="00N5G00000VL3LU" size="20" type="text" class="input input--text" />
+      </div>
+    </div>
+  </div>
+
+  <div class="form__two-col">
+    <div class="col">
+      <div class="input__group">
+        <label for="last_name">Last Name</label>
+        <input id="last_name" value="{{ get:last_name | sanitize }}" maxlength="40" name="last_name" size="20" type="text" class="input input--text" required/>
+      </div>
+    </div>
+    <div class="col apply-now__second-owner">
+      <div class="input__group">
+        <label for="00N5G00000VL3LW">Last Name</label>
+        <input  id="00N5G00000VL3LW" maxlength="80" name="00N5G00000VL3LW" size="20" type="text" class="input input--text" />
+      </div>
+    </div>
+  </div>
+
+  <div class="form__two-col">
+    <div class="col">
+      <div class="input__group">
+        <label for="00N5G00000VL3LQ">Social Security Number: (Example: xxx-xx-xxxx)</label>
+        <input  id="00N5G00000VL3LQ" maxlength="40" name="00N5G00000VL3LQ" size="20" type="text" class="input input--text" required/>
+      </div>
+    </div>
+    <div class="col apply-now__second-owner">
+      <div class="input__group">
+        <label for="00N5G00000VL3La">Social Security Number: (Example: xxx-xx-xxxx)</label>
+        <input  id="00N5G00000VL3La" maxlength="50" name="00N5G00000VL3La" size="20" type="text" class="input input--text" />
+      </div>
+    </div>
+  </div>
+
+  <div class="form__two-col">
+    <div class="col">
+      <div class="input__group">
+        <label for="00N5G00000VL3LM">Date of Birth: (Example: MM/DD/YYYY)</label>
+        <input class="input input--text" id="00N5G00000VL3LM" name="00N5G00000VL3LM" size="12" type="text" pattern="\d{2}-\d{2}-\d{4}" />
+      </div>
+    </div>
+    <div class="col apply-now__second-owner">
+      <div class="input__group">
+        <label for="00N5G00000VL3LS">Date of Birth: (Example: MM/DD/YYYY)</label>
+        <input class="input input--text" id="00N5G00000VL3LS" name="00N5G00000VL3LS" size="12" type="text" pattern="\d{2}-\d{2}-\d{4}" />
+      </div>
+    </div>
+  </div>
+
+  <div class="form__two-col">
+    <div class="col">
+      <div class="input__group">
+        <label for="00N5G00000VL3LL">Annual Income</label>
+        <input  id="00N5G00000VL3LL" maxlength="40" name="00N5G00000VL3LL" size="20" type="text" class="input input--text" required/>
+      </div>
+    </div>
+    <div class="col apply-now__second-owner">
+      <div class="input__group">
+        <label for="00N5G00000VL3LR">Annual Income</label>
+        <input  id="00N5G00000VL3LR" maxlength="50" name="00N5G00000VL3LR" size="20" type="text" class="input input--text" />
+      </div>
+    </div>
+  </div>
+
+  <div class="form__two-col">
+    <div class="col">
+      <div class="input__group">
+        <label for="email">Email Address</label>
+        <input  id="email" value="{{ get:email | sanitize }}" maxlength="40" name="email" size="20" type="email" class="input input--text" required/>
+      </div>
+    </div>
+    <div class="col apply-now__second-owner">
+      <div class="input__group">
+        <label for="00N5G00000VL3LT">Email Address</label>
+        <input  id="00N5G00000VL3LT" maxlength="80" name="00N5G00000VL3LT" size="20" type="email" class="input input--text" />
+      </div>
+    </div>
+  </div>
+
+  <div class="form__two-col">
+    <div class="col">
+      <div class="input__group">
+        <label for="phone">Phone Number</label>
+        <input  id="phone" value="{{ get:phone | sanitize }}" maxlength="40" name="phone" size="20" type="tel" class="input input--text" required/>
+      </div>
+    </div>
+    <div class="col apply-now__second-owner">
+      <div class="input__group">
+        <label for="00N5G00000VL3LY">Phone Number</label>
+        <input  id="00N5G00000VL3LY" maxlength="80" name="00N5G00000VL3LY" size="20" type="tel" class="input input--text" />
+      </div>
+    </div>
+  </div>
+
+  <fieldset class="text-align--center order__submit">
+    <input type="submit" name="submit" class="button button--link button--primary button--size-default js-prev-pg-button" value="Go Back" >
+    <input type="submit" name="submit" class="button button--link button--primary button--size-default js-next-pg-button apply-now__submit-02a" value="Continue" >
+  </fieldset>
+
+</fieldset>
+

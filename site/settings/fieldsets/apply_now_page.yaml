@@ -1,0 +1,614 @@
+sections:
+  main:
+    display: Main
+    fields:
+      section_page_hero:
+        type: section
+        display: Marquee
+        instructions: 'Centered heading + intro texts'
+      background_image:
+        container: main
+        folder: /
+        restrict: false
+        max_files: 1
+        mode: grid
+        type: assets
+        display: 'Background Image'
+      marquee-heading:
+        type: text
+        display: Heading
+        default: 'Get Started.'
+      marquee-sub-heading:
+        type: text
+        display: Sub-Heading
+      list_content:
+        mode: table
+        max_rows: 7
+        fields:
+          list_item:
+            type: text
+            instructions: 'Text that will be auto-formatted into a fancy looking list'
+            display: 'List Item'
+        type: grid
+        display: 'List Content'
+      form_intro:
+        type: section
+        display: 'Form Intro'
+      heading:
+        type: text
+        display: Heading
+        default: 'Contact us'
+      content:
+        settings: 'Basic - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: 'Content (optional) intro text'
+      section_form_fields:
+        type: section
+        display: 'Form Fields Section'
+      geographic_availability_statement:
+        settings: 'Basic - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: 'Geographic Availability Statement'
+  ca_-_modals:
+    display: 'CA - Modals'
+    fields:
+      section_ca_modal_10:
+        type: section
+        display: 'CA Modal 10'
+      ca_modal_10_internal_naming:
+        type: text
+        instructions: |
+          Internal name for this modal.
+          It will not used/displayed publicly - only in editing mode for authoring/colaboration aid.
+        display: 'Internal Name'
+      ca_modal_10:
+        settings: 'Standard - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: 'CA Modal 10 - Scrollbox Content'
+        instructions: 'Legalese area inside of scrollbox'
+      ca_modal_10_acknowledgement:
+        settings: 'Standard - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: 'CA Modal 10 - Acknowledgement'
+        instructions: '(optional) text area under scrollbox'
+      ca_modal_10_checkbox_is_required:
+        type: toggle
+        display: 'CA Modal 10 - Checkbox Is Required'
+        instructions: 'Ensures user must click checkbox'
+        width: 25
+      ca_modal_10_checkbox_label:
+        settings: 'Standard - Blurb_short'
+        restrict_assets: false
+        type: redactor
+        display: 'CA Modal 10 - Checkbox Label'
+        instructions: 'Text for checkbox'
+        width: 75
+      ca_modal_10_checkbox_salesforceid:
+        type: text
+        instructions: |
+          Salesforce generated field ID.
+          
+          _**¡If there is no ID, neither the checkbox or label will be rendered!**_
+        width: 66
+        display: 'CA Modal 10 - Checkbox SalesforceID'
+      section_ca_modal_20:
+        type: section
+        display: 'CA Modal 20'
+      ca_modal_20_internal_naming:
+        type: text
+        instructions: |
+          Internal name for this modal.
+          It will not used/displayed publicly - only in editing mode for authoring/colaboration aid.
+        display: 'Internal Name'
+      ca_modal_20:
+        settings: 'Standard - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: 'CA Modal 20 - Scrollbox Content'
+        instructions: 'Legalese area inside of scrollbox'
+      ca_modal_20_acknowledgement:
+        settings: 'Standard - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: 'CA Modal 20 - Acknowledgement'
+        instructions: '(optional) text area under scrollbox'
+      ca_modal_20_checkbox_is_required:
+        type: toggle
+        display: 'CA Modal 20 - Checkbox Is Required'
+        instructions: 'Ensures user must click checkbox'
+        width: 25
+      ca_modal_20_checkbox_label:
+        settings: 'Standard - Blurb_short'
+        restrict_assets: false
+        type: redactor
+        display: 'CA Modal 20 - Checkbox Label'
+        instructions: 'Text for checkbox'
+        width: 75
+      ca_modal_20_checkbox_salesforceid:
+        type: text
+        instructions: |
+          Salesforce generated field ID.
+          
+          _**¡If there is no ID, neither the checkbox or label will be rendered!**_
+        width: 66
+        display: 'CA Modal 20 - Checkbox SalesforceID'
+      section_ca_modal_30:
+        type: section
+        display: 'CA Modal 30'
+      ca_modal_30_internal_naming:
+        type: text
+        instructions: |
+          Internal name for this modal.
+          It will not used/displayed publicly - only in editing mode for authoring/colaboration aid.
+        display: 'Internal Name'
+      ca_modal_30:
+        settings: 'Standard - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: 'CA Modal 30 - Scrollbox Content'
+        instructions: 'Legalese area inside of scrollbox'
+      ca_modal_30_acknowledgement:
+        settings: 'Standard - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: 'CA Modal 30 - Acknowledgement'
+        instructions: '(optional) text area under scrollbox'
+      ca_modal_30_checkbox_is_required:
+        type: toggle
+        display: 'CA Modal 30 - Checkbox Is Required'
+        instructions: 'Ensures user must click checkbox'
+        width: 25
+      ca_modal_30_checkbox_label:
+        settings: 'Standard - Blurb_short'
+        restrict_assets: false
+        type: redactor
+        display: 'CA Modal 30 - Checkbox Label'
+        instructions: 'Text for checkbox'
+        width: 75
+      ca_modal_30_checkbox_salesforceid:
+        type: text
+        instructions: |
+          Salesforce generated field ID.
+          
+          _**¡If there is no ID, neither the checkbox or label will be rendered!**_
+        width: 66
+        display: 'CA Modal 30 - Checkbox SalesforceID'
+      section_ca_modal_40:
+        type: section
+        display: 'CA Modal 40'
+        instructions: |
+          **removed by request
+          FI-96: "Please completely delete ca_modal_40."
+      ca_modal_40_internal_naming:
+        type: text
+        instructions: |
+          Internal name for this modal.
+          It will not used/displayed publicly - only in editing mode for authoring/colaboration aid.
+        display: 'Internal Name'
+      ca_modal_40:
+        settings: 'Standard - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: 'CA Modal 40 - Scrollbox Content'
+        instructions: 'Legalese area inside of scrollbox'
+      ca_modal_40_acknowledgement:
+        settings: 'Standard - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: 'CA Modal 40 - Acknowledgement'
+        instructions: '(optional) text area under scrollbox'
+      ca_modal_40_checkbox_is_required:
+        type: toggle
+        display: 'CA Modal 40 - Checkbox Is Required'
+        instructions: 'Ensures user must click checkbox'
+        width: 25
+      ca_modal_40_checkbox_label:
+        settings: 'Standard - Blurb_short'
+        restrict_assets: false
+        type: redactor
+        display: 'CA Modal 40 - Checkbox Label'
+        instructions: 'Text for checkbox'
+        width: 75
+      ca_modal_40_checkbox_salesforceid:
+        type: text
+        instructions: |
+          Salesforce generated field ID.
+          
+          _**¡If there is no ID, neither the checkbox or label will be rendered!**_
+        width: 66
+        display: 'CA Modal 40 - Checkbox SalesforceID'
+      section_ca_modal_50:
+        type: section
+        display: 'CA Modal 50'
+      ca_modal_50_internal_naming:
+        type: text
+        instructions: |
+          Internal name for this modal.
+          It will not used/displayed publicly - only in editing mode for authoring/colaboration aid.
+        display: 'Internal Name'
+      ca_modal_50:
+        settings: 'Standard - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: 'CA Modal 50 - Scrollbox Content'
+        instructions: 'Legalese area inside of scrollbox'
+      ca_modal_50_acknowledgement:
+        settings: 'Standard - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: 'CA Modal 50 - Acknowledgement'
+        instructions: '(optional) text area under scrollbox'
+      ca_modal_50_checkbox_is_required:
+        type: toggle
+        display: 'CA Modal 50 - Checkbox Is Required'
+        instructions: 'Ensures user must click checkbox'
+        width: 25
+      ca_modal_50_checkbox_label:
+        settings: 'Standard - Blurb_short'
+        restrict_assets: false
+        type: redactor
+        display: 'CA Modal 50 - Checkbox Label'
+        instructions: 'Text for checkbox'
+        width: 75
+      ca_modal_50_checkbox_salesforceid:
+        type: text
+        instructions: |
+          Salesforce generated field ID.
+          
+          _**¡If there is no ID, neither the checkbox or label will be rendered!**_
+        width: 66
+        display: 'CA Modal 50 - Checkbox SalesforceID'
+      section_ca_modal_60:
+        type: section
+        display: 'CA Modal 60'
+      ca_modal_60_internal_naming:
+        type: text
+        instructions: |
+          Internal name for this modal.
+          It will not used/displayed publicly - only in editing mode for authoring/colaboration aid.
+        display: 'Internal Name'
+      ca_modal_60:
+        settings: 'Standard - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: 'CA Modal 60 - Scrollbox Content'
+        instructions: 'Legalese area inside of scrollbox'
+      ca_modal_60_acknowledgement:
+        settings: 'Standard - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: 'CA Modal 60 - Acknowledgement'
+        instructions: '(optional) text area under scrollbox'
+      ca_modal_60_checkbox_is_required:
+        type: toggle
+        display: 'CA Modal 60 - Checkbox Is Required'
+        instructions: 'Ensures user must click checkbox'
+        width: 25
+      ca_modal_60_checkbox_label:
+        settings: 'Standard - Blurb_short'
+        restrict_assets: false
+        type: redactor
+        display: 'CA Modal 60 - Checkbox Label'
+        instructions: 'Text for checkbox'
+        width: 75
+      ca_modal_60_checkbox_salesforceid:
+        type: text
+        instructions: |
+          Salesforce generated field ID.
+          
+          _**¡If there is no ID, neither the checkbox or label will be rendered!**_
+        width: 66
+        display: 'CA Modal 60 - Checkbox SalesforceID'
+      section_ca_modal_70:
+        type: section
+        display: 'CA Modal 70'
+      ca_modal_70_internal_naming:
+        type: text
+        instructions: |
+          Internal name for this modal.
+          It will not used/displayed publicly - only in editing mode for authoring/colaboration aid.
+        display: 'Internal Name'
+      ca_modal_70:
+        settings: 'Standard - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: 'CA Modal 70 - Scrollbox Content'
+        instructions: 'Legalese area inside of scrollbox'
+      ca_modal_70_acknowledgement:
+        settings: 'Standard - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: 'CA Modal 70 - Acknowledgement'
+        instructions: '(optional) text area under scrollbox'
+      ca_modal_70_checkbox_is_required:
+        type: toggle
+        display: 'CA Modal 70 - Checkbox Is Required'
+        instructions: 'Ensures user must click checkbox'
+        width: 25
+      ca_modal_70_checkbox_label:
+        settings: 'Standard - Blurb_short'
+        restrict_assets: false
+        type: redactor
+        display: 'CA Modal 70 - Checkbox Label'
+        instructions: 'Text for checkbox'
+        width: 75
+      ca_modal_70_checkbox_salesforceid:
+        type: text
+        instructions: |
+          Salesforce generated field ID.
+          
+          _**¡If there is no ID, neither the checkbox or label will be rendered!**_
+        width: 66
+        display: 'CA Modal 70 - Checkbox SalesforceID'
+      section_ca_modal_80:
+        type: section
+        display: 'CA Modal 80'
+      ca_modal_80_internal_naming:
+        type: text
+        instructions: |
+          Internal name for this modal.
+          It will not used/displayed publicly - only in editing mode for authoring/colaboration aid.
+        display: 'Internal Name'
+      ca_modal_80:
+        settings: 'Standard - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: 'CA Modal 80 - Scrollbox Content'
+        instructions: 'Legalese area inside of scrollbox'
+      ca_modal_80_acknowledgement:
+        settings: 'Standard - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: 'CA Modal 80 - Acknowledgement'
+        instructions: '(optional) text area under scrollbox'
+      ca_modal_80_checkbox_is_required:
+        type: toggle
+        display: 'CA Modal 80 - Checkbox Is Required'
+        instructions: 'Ensures user must click checkbox'
+        width: 25
+      ca_modal_80_checkbox_label:
+        settings: 'Standard - Blurb_short'
+        restrict_assets: false
+        type: redactor
+        display: 'CA Modal 80 - Checkbox Label'
+        instructions: 'Text for checkbox'
+        width: 75
+      ca_modal_80_checkbox_salesforceid:
+        type: text
+        instructions: |
+          Salesforce generated field ID.
+          
+          _**¡If there is no ID, neither the checkbox or label will be rendered!**_
+        width: 66
+        display: 'CA Modal 80 - Checkbox SalesforceID'
+  fl_-_modals:
+    display: 'FL - Modals'
+    fields:
+      section_fl_modal_10:
+        type: section
+        display: 'FL Modal 10'
+      fl_modal_10:
+        settings: 'Standard - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: 'FL Modal 10 - Scrollbox Content'
+        instructions: 'Legalese area inside of scrollbox'
+      fl_modal_10_acknowledgement:
+        settings: 'Standard - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: 'FL Modal 10 - Acknowledgement'
+        instructions: '(optional) text area under scrollbox'
+      fl_modal_10_checkbox_is_required:
+        type: toggle
+        display: 'FL Modal 10 - Checkbox Is Required'
+        instructions: 'Ensures user must click checkbox'
+        width: 25
+      fl_modal_10_checkbox_label:
+        settings: 'Standard - Blurb_short'
+        restrict_assets: false
+        type: redactor
+        display: 'FL Modal 10 - Checkbox Label'
+        instructions: 'Text for checkbox'
+        width: 75
+      fl_modal_10_checkbox_salesforceid:
+        type: text
+        instructions: |
+          Salesforce generated field ID.
+          
+          _**¡If there is no ID, neither the checkbox or label will be rendered!**_
+        width: 66
+        display: 'FL Modal 10 - Checkbox SalesforceID'
+      section_fl_modal_20:
+        type: section
+        display: 'FL Modal 20'
+      fl_modal_20_internal_naming:
+        type: text
+        instructions: |
+          Internal name for this modal.
+          It will not used/displayed publicly - only in editing mode for authoring/colaboration aid.
+        display: 'Internal Name'
+      fl_modal_20:
+        settings: 'Standard - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: 'FL Modal 20 - Scrollbox Content'
+        instructions: 'Legalese area inside of scrollbox'
+      fl_modal_20_acknowledgement:
+        settings: 'Standard - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: 'FL Modal 20 - Acknowledgement'
+        instructions: '(optional) text area under scrollbox'
+      fl_modal_20_checkbox_is_required:
+        type: toggle
+        display: 'FL Modal 20 - Checkbox Is Required'
+        instructions: 'Ensures user must click checkbox'
+        width: 25
+      fl_modal_20_checkbox_label:
+        settings: 'Standard - Blurb_short'
+        restrict_assets: false
+        type: redactor
+        display: 'FL Modal 20 - Checkbox Label'
+        instructions: 'Text for checkbox'
+        width: 75
+      fl_modal_20_checkbox_salesforceid:
+        type: text
+        instructions: |
+          Salesforce generated field ID.
+          
+          _**¡If there is no ID, neither the checkbox or label will be rendered!**_
+        width: 66
+        display: 'FL Modal 20 - Checkbox SalesforceID'
+      section_fl_modal_30:
+        type: section
+        display: 'FL Modal 30'
+      fl_modal_30_internal_naming:
+        type: text
+        instructions: |
+          Internal name for this modal.
+          It will not used/displayed publicly - only in editing mode for authoring/colaboration aid.
+        display: 'Internal Name'
+      fl_modal_30:
+        settings: 'Standard - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: 'FL Modal 30 - Scrollbox Content'
+        instructions: 'Legalese area inside of scrollbox'
+      fl_modal_30_acknowledgement:
+        settings: 'Standard - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: 'FL Modal 30 - Acknowledgement'
+        instructions: '(optional) text area under scrollbox'
+      fl_modal_30_checkbox_is_required:
+        type: toggle
+        display: 'FL Modal 30 - Checkbox Is Required'
+        instructions: 'Ensures user must click checkbox'
+        width: 25
+      fl_modal_30_checkbox_label:
+        settings: 'Standard - Blurb_short'
+        restrict_assets: false
+        type: redactor
+        display: 'FL Modal 30 - Checkbox Label'
+        instructions: 'Text for checkbox'
+        width: 75
+      fl_modal_30_checkbox_salesforceid:
+        type: text
+        instructions: |
+          Salesforce generated field ID.
+          
+          _**¡If there is no ID, neither the checkbox or label will be rendered!**_
+        width: 66
+        display: 'FL Modal 30 - Checkbox SalesforceID'
+      section_fl_modal_40:
+        type: section
+        display: 'FL Modal 40'
+        instructions: |
+          **removed by request
+          FI-96: "Please completely delete fl_modal_40."
+      fl_modal_40_internal_naming:
+        type: text
+        instructions: |
+          Internal name for this modal.
+          It will not used/displayed publicly - only in editing mode for authoring/colaboration aid.
+        display: 'Internal Name'
+      fl_modal_40:
+        settings: 'Standard - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: 'FL Modal 40 - Scrollbox Content'
+        instructions: 'Legalese area inside of scrollbox'
+      fl_modal_40_acknowledgement:
+        settings: 'Standard - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: 'FL Modal 40 - Acknowledgement'
+        instructions: '(optional) text area under scrollbox'
+      fl_modal_40_checkbox_is_required:
+        type: toggle
+        display: 'FL Modal 40 - Checkbox Is Required'
+        instructions: 'Ensures user must click checkbox'
+        width: 25
+      fl_modal_40_checkbox_label:
+        settings: 'Standard - Blurb_short'
+        restrict_assets: false
+        type: redactor
+        display: 'FL Modal 40 - Checkbox Label'
+        instructions: 'Text for checkbox'
+        width: 75
+      fl_modal_40_checkbox_salesforceid:
+        type: text
+        instructions: |
+          Salesforce generated field ID.
+          
+          _**¡If there is no ID, neither the checkbox or label will be rendered!**_
+        width: 66
+        display: 'FL Modal 40 - Checkbox SalesforceID'
+      section_fl_modal_50:
+        type: section
+        display: 'FL Modal 50'
+      fl_modal_50_internal_naming:
+        type: text
+        instructions: |
+          Internal name for this modal.
+          It will not used/displayed publicly - only in editing mode for authoring/colaboration aid.
+        display: 'Internal Name'
+      fl_modal_50:
+        settings: 'Standard - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: 'FL Modal 50 - Scrollbox Content'
+        instructions: 'Legalese area inside of scrollbox'
+      fl_modal_50_acknowledgement:
+        settings: 'Standard - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: 'FL Modal 50 - Acknowledgement'
+        instructions: '(optional) text area under scrollbox'
+      fl_modal_50_checkbox_is_required:
+        type: toggle
+        display: 'FL Modal 50 - Checkbox Is Required'
+        instructions: 'Ensures user must click checkbox'
+        width: 25
+      fl_modal_50_checkbox_label:
+        settings: 'Standard - Blurb_short'
+        restrict_assets: false
+        type: redactor
+        display: 'FL Modal 50 - Checkbox Label'
+        instructions: 'Text for checkbox'
+        width: 75
+      fl_modal_50_checkbox_salesforceid:
+        type: text
+        instructions: |
+          Salesforce generated field ID.
+          
+          _**¡If there is no ID, neither the checkbox or label will be rendered!**_
+        width: 66
+        display: 'FL Modal 50 - Checkbox SalesforceID'
+  sidebar:
+    display: Sidebar
+    fields:
+      partial_page_metadata:
+        fieldset: page_metadata
+        type: partial
+        display: 'Page Metadata'
+  metadata:
+    display: Metadata
+    fields:
+      partial_seo_metadata:
+        fieldset: seo_metadata
+        type: partial
+        display: Metadata
+      partial_open_graph:
+        fieldset: open_graph
+        type: partial
+        display: 'Open Graph'
+taxonomies: false
+template: apply_now_page
+title: 'Apply Now Page'
+hide: true

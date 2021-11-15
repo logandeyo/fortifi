@@ -1,0 +1,45 @@
+.form-footer {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1350px;
+
+  &__filler {
+     background-color: var(--color-gray-5);
+     max-width: 1350px;
+     margin-left: auto;
+     margin-right: auto;
+     padding-bottom: 4rem;
+   }
+
+  &__img {
+    margin-bottom: -1rem;
+  }
+
+  &__caption {
+    align-items: center;
+    background-color: #00978b;
+    color: var(--color-white);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2rem;
+    margin: 0 auto 4rem;
+    padding: 2rem;
+    position: relative;
+
+    @media (--medium-large) {
+      display: grid;
+      grid-gap: 2rem;
+      grid-template-columns: 5fr 3fr;
+      grid-template-rows: 1fr;
+      margin: -8rem auto 4rem;
+      padding: 4rem 3rem;
+    }
+  }
+
+  &__list-item {
+    background: url(/images/icon_checkmark.svg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding-left: 3rem;
+  }
+}

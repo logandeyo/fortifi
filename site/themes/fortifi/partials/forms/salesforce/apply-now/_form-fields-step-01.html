@@ -1,0 +1,95 @@
+{{#
+via :: https://projects.invisionapp.com/d/main#/console/18021689/402228152/preview
+#}}
+
+
+
+<fieldset class="apply-now-form__fieldset form--validate is-hidden" id="apply-now-form__01">
+  {{ partial:forms/salesforce/apply-now/_step-indicator current_step="1" }}
+  <div class="input__group">
+    <label class="text-align--center text--weight-bold heading--h3" for="00N5G00000VL3Lb">What upgrades are you considering?</label>
+    <select class="multiselect" id="00N5G00000VL3Lb" multiple="multiple" name="00N5G00000VL3Lb" title="Product Interest" required>
+      <option value="Roof">Roof</option>
+      <option value="Windows &amp; Doors">Windows &amp; Doors</option>
+      <option value="Heating &amp; Cooling (HVAC)">Heating &amp; Cooling (HVAC)</option>
+      <option value="Solar">Solar</option>
+      <option value="Cool Wall">Exterior Cool Wall Coating (CA Ony)</option>
+      <option value="Landscaping">Drought Tolerant Landscaping (CA Only)</option>
+      <option value="Impact Windows & Doors">Impact Windows & Doors (FL Only)</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+
+  <div class="input__group">
+    <label class="text-align--center text--weight-bold heading--h3"  for="00N5G00000VL3Lc">What upgrades are on your wishlist? (Optional)</label>
+    <select class="multiselect" id="00N5G00000VL3Lc" multiple="multiple" name="00N5G00000VL3Lc" title="Product Wishlist" >
+      <option value="Roof">Roof</option>
+      <option value="Windows &amp; Doors">Windows &amp; Doors</option>
+      <option value="Heating &amp; Cooling (HVAC)">Heating &amp; Cooling (HVAC)</option>
+      <option value="Solar">Solar</option>
+      <option value="Cool Wall">Exterior Cool Wall Coating (CA Ony)</option>
+      <option value="Landscaping">Drought Tolerant Landscaping (CA Only)</option>
+      <option value="Impact Windows & Doors">Impact Windows & Doors (FL Only)</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+
+  <div class="form__two-col">
+    <div class="col">
+      <div class="input__group">
+        <label for="00N5G00000VL3LE">Desired Term:</label>
+        <select id="00N5G00000VL3LE" name="00N5G00000VL3LE" title="Desired Term"  class="input input--select" required>
+          <option value="">--None--</option>
+          <option value="5 years - 5.99%">5 years - 5.99%</option>
+          <option value="10 years - 6.49%">10 years - 6.49%</option>
+          <option value="15 years - 6.99%">15 years - 6.99%</option>
+          <option value="20 years - 7.49%">20 years - 7.49%</option>
+          <option value="25 years - 7.49%">25 years - 7.49%</option>
+          <option value="30 years - 7.49%">30 years - 7.49%</option>
+        </select>
+      </div>
+    </div>
+    <div class="col">
+      <div class="input__group">
+        <label for="00N5G00000VL3Li">How did you hear about us?</label>
+        <select id="00N5G00000VL3Li" name="00N5G00000VL3Li" title="Stated Source" class="input input--select" required>
+          <option value="">--None--</option>
+          <option value="Facebook/Instagram">Facebook/Instagram</option>
+          <option value="Google Search">Google Search</option>
+          <option value="Neighbor/Friend">Neighbor/Friend</option>
+          <option value="FortiFi Sales Rep">FortiFi Sales Rep</option>
+          <option value="Contractor">Contractor</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="form__two-col stated-source-conditionals__sales-rep is-hidden">
+    <div class="col">
+    </div>
+    <div class="col">
+      <div class="input__group">
+        <label for="00N5G00000VL3LG">FortiFi Sales Rep:</label>
+        <input id="00N5G00000VL3LG" maxlength="50" name="00N5G00000VL3LG" size="20" type="text" class="input input--select" />
+      </div>
+    </div>
+  </div>
+
+  <div class="form__two-col stated-source-conditionals__contractor-name is-hidden">
+    <div class="col">
+    </div>
+    <div class="col">
+      <div class="input__group">
+        <label for="00N5G00000VL3LD">Contractor Name:</label>
+        <input id="00N5G00000VL3LD" maxlength="50" name="00N5G00000VL3LD" size="20" type="text" class="input input--select" />
+      </div>
+    </div>
+  </div>
+
+
+  <fieldset class="text-align--center order__submit">
+    <input type="submit" name="submit" class="button button--link button--primary button--size-default js-prev-pg-button" data-skip-to-step="0" value="Go Back" >
+    <input type="submit" name="submit" class="button button--link button--primary button--size-default js-next-pg-button" value="Continue" >
+  </fieldset>
+</fieldset>
+

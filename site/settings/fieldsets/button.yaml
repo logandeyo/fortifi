@@ -1,0 +1,19 @@
+sections:
+  main:
+    display: Main
+    fields:
+      cta_link:
+        max_items: 1
+        mode: panes
+        type: pages
+        display: 'CTA Link'
+        width: 50
+        instructions: '(optional) Select a page from content tree to link to'
+      cta_link_text:
+        type: text
+        width: 50
+        display: 'CTA Link Text Override'
+        instructions: 'Linked page''s title will be used unless you would like to declare alternate text here'
+taxonomies: false
+title: '_element - Button'
+hide: true

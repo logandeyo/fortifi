@@ -1,0 +1,59 @@
+
+<div class="global-footer ">
+  <div class="wrapper">
+    <div class="global-footer__wrap">
+      <div class="global-footer__meta rhythm">
+        <a href="/" class="brand brand--large">
+          <img src="/images/FortiFi_footer_logo.svg" alt="FortiFi logo" >
+        </a>
+        <p class="legal">
+          &copy; {{ now.year }} {{ copyright_formality }}
+          <br/>
+
+          {{ if footer_legal_links }}
+            {{ relate:footer_legal_links }}
+              <a href="{{ url }}">{{ title }}</a>
+            {{ /relate:footer_legal_links }}
+          {{ /if }}
+
+        </p>
+
+        <p class="legal">{{ legal_disclaimers }}</p>
+      </div>
+      <!--/ __meta -->
+
+
+      <div class="global-footer__menu">
+        <ul class="list list--blank">
+          {{ nav from="/" include_home="true" scope="tag" footer_navigation_hide_me:isnt="true"}}
+          <li>
+            <a href="{{ navigation_link or url  }}" class="global-footer__menu-item">
+              {{ tag:navigation_title or title }}
+            </a>
+          </li>
+          {{ /nav }}
+        </ul>
+      </div>
+      <!--/ __menu -->
+
+
+      <div class="global-footer__contact rhythm">
+        <strong>{{ og_site_name }}</strong>
+        <p>
+          {{ organization_metadata.address_streetaddress }} {{ organization_metadata.address_streetaddress_unit }},
+          <br>
+          {{ organization_metadata.address_addresslocality }}, {{ organization_metadata.address_addressregion }} {{ organization_metadata.address_postalcode }}
+        </p>
+        <p>
+          <a href="tel:{{ organization_metadata.telephone | macro:tel_formatting }}">{{ organization_metadata.telephone }}</a><br>
+          <a href="mailto:info@fortifi.com">info@fortifi.com</a>
+        </p>
+      </div>
+      <!--/ __contact -->
+    </div>
+    <!--/ __wrap -->
+  </div>
+  <!--/ wrapper -->
+</div>
+<!--/ global-footer -->
+

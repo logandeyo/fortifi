@@ -1,0 +1,28 @@
+title: '__global Open Graph'
+hide: true
+sections:
+  main:
+    display: Main
+    fields:
+      section_open_graph:
+        type: section
+        instructions: |
+          Open Graph allows integration between a website and Facebook and other social sites. By integrating Open Graph meta tags into your page's content, you can identify which elements of your page you want to show when someone share's your page.
+          These will be used on every page unless explicitly overridden.
+        display: 'Open Graph'
+      og_site_name:
+        type: text
+        display: 'og:site_name'
+        instructions: 'The name of your website'
+        localizable: true
+        width: 50
+      fb_app_id:
+        type: text
+        instructions: 'In order to use Facebook Insights you must add the app ID to your page. Insights lets you view analytics for traffic to your site from Facebook. Find the app ID in your App Dashboard.'
+        display: 'fb:app_id'
+        width: 50
+      partial_open_graph:
+        fieldset: open_graph
+        type: partial
+        display: 'Open Graph'
+taxonomies: false

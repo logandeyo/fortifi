@@ -1,0 +1,98 @@
+fields:
+  main:
+    type: section
+  active:
+    display: Activate maintenance mode;
+    type: toggle
+  password:
+    display: Password
+    type: text
+    show_when:
+      active: true
+  texts:
+    type: section
+    show_when:
+      active: true
+  page_title:
+    display: Content of the <title> tag.
+    type: text
+    show_when:
+      active: true
+  main_title:
+    display: Title on page
+    type: text
+    show_when:
+      active: true
+  subtitle:
+    display: Subtitle on page
+    type: text
+    show_when:
+      active: true
+  button:
+    display: Text for the password button
+    type: text
+    show_when:
+      active: true
+  placeholder:
+    display: Placeholder text for the password input
+    type: text
+    show_when:
+      active: true
+  password_error:
+    display: Message when the password is wrong
+    show_when:
+      active: true
+  design:
+    type: section
+    show_when:
+      active: true
+  logo:
+    display: Logo
+    width: 50
+    type: assets
+    container: main
+    max_files: 1
+    show_when:
+      active: true
+  background-image:
+    display: Background image
+    width: 50
+    type: assets
+    container: main
+    max_files: 1
+    show_when:
+      active: true
+  background-color:
+    display: Background color
+    type: text
+    mode: color
+    width: 33
+    show_when:
+      active: true
+    default: '#333333'
+  color:
+    display: Text color
+    type: text
+    mode: color
+    width: 33
+    show_when:
+      active: true
+    default: '#FFFFFF'
+  button-color:
+    display: Button color
+    type: text
+    mode: color
+    width: 33
+    show_when:
+      active: true
+    default: '#00d1b2'
+  css:
+    display: Custom CSS code
+    type: textarea
+    show_when:
+      active: true
+  js:
+    display: Custom JS code
+    type: textarea
+    show_when:
+      active: true

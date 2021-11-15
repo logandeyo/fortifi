@@ -1,0 +1,37 @@
+sections:
+  main:
+    display: Main
+    fields:
+      partial_page_head:
+        fieldset: page_head
+        type: partial
+        display: 'Page Head'
+      section_page_stuff:
+        type: section
+        display: 'Page Stuff'
+      partial_nest:
+        fieldset: nest
+        type: partial
+        display: Nest
+  sidebar:
+    display: Sidebar
+    fields:
+      partial_page_metadata:
+        fieldset: page_metadata
+        type: partial
+        display: 'Page Metadata'
+  metadata:
+    display: Metadata
+    fields:
+      partial_seo_metadata:
+        fieldset: seo_metadata
+        type: partial
+        display: Metadata
+      partial_open_graph:
+        fieldset: open_graph
+        type: partial
+        display: 'Open Graph'
+taxonomies: false
+fieldset: interior_page
+template: interior_page
+title: 'Interior Page'

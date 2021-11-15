@@ -1,0 +1,62 @@
+.media-object {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6rem;
+
+  @media (--medium) {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  img, .media-object__figure {
+    margin-bottom: 3rem;
+    text-align: center;
+
+    & > .link {
+      display: inline-block;
+      margin-top: 2rem;
+    }
+
+    @media (--medium) {
+      flex: 1 0 66%;
+      margin-bottom: 0;
+      max-width: 50%;
+      order: 2;
+      width: 750px;
+    }
+
+    @media (--extra-large) {
+      max-width: 750px;
+    }
+  }
+
+  &__caption {
+    @media (--medium) {
+      padding-right: 6rem;
+    }
+  }
+
+  &__cta {
+    margin-top: 3rem;
+  }
+
+  .video-wrapper {
+    position: relative;
+    overflow: hidden;
+
+  &::before {
+     content: '';
+     display: block;
+     padding-bottom: 56.25%;
+   }
+
+  & > iframe {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+}
+

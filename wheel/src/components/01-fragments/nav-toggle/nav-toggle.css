@@ -1,0 +1,88 @@
+.nav__toggle {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  height: var(--header-height-sm);
+  padding: 0;
+  position: absolute;
+  right: 0.5rem;
+  top: 0;
+  width: var(--header-height-sm);
+  z-index: var(--zindex--nav);
+
+  @media (--medium) {
+    display: none;
+  }
+
+  .nav-active .global-header--transparent &,
+  .subnav-active .global-header--transparent & {
+    background-color: var(--color-white);
+  }
+
+  &:--haf {
+    outline: none;
+  }
+
+  & > i {
+    background-color: var(--color-text);
+    display: block;
+    height: 3px;
+    position: absolute;
+    right: 1rem;
+    top: calc(50% - 1.5px);
+    transition: all 0.25s ease-in-out;
+    width: 2rem;
+
+    &::after,
+    &::before {
+      background-color: var(--color-text);
+      content: '';
+      display: block;
+      left: 0;
+      height: 3px;
+      position: absolute;
+      transition: all 0.25s ease-in-out;
+      width: 2rem;
+    }
+
+    &::after {
+      bottom: 10px;
+    }
+
+    &::before {
+      top: 10px;
+    }
+  }
+}
+
+.nav-toggle--is-active {
+  &:hover,
+  &:focus,
+  &:active {
+    & > i {
+
+      &::after,
+      &::before {
+        background-color: var(--color-text);
+      }
+    }
+  }
+
+  & > i {
+    background-color: var(--color-white);
+
+    &::after {
+      background-color: var(--color-text);
+      transform: rotate(-45deg);
+      transform-origin: center;
+      top: 0;
+    }
+
+    &::before {
+      background-color: var(--color-text);
+      top: 0;
+      transform: rotate(45deg);
+      transform-origin: center;
+    }
+  }
+}

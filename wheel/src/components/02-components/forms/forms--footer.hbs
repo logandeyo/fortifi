@@ -1,0 +1,44 @@
+<div class="wrapper wrapper--small">
+  <div class="rhythm rich-text form-intro">
+    <h3 class="heading heading--h3">Let's get started!</h3>
+    <p>Please complete our contact form to get started. We’ll review and get back to you within XX days to discuss your project and financing options with FortiFi. </p>
+  </div>
+
+  <form action="" class="rhythm">
+    <fieldset class="a11y-visually-hidden">
+      <label for="favoritedog" id="favoritedog-label">Favorite Dog?</label>
+      <input name="favoritedog" class="input input--text" id="favoritedog" type="text" aria-labelledby="favoritedog-label" autocomplete="new-password"/>
+    </fieldset>
+
+    <div class="form__two-col">
+      <fieldset class="col">
+        <label for="contact" id="contact-label">Name</label>
+        <input name="name" class="input input--text" id="contact" type="text" aria-labelledby="contact-label" required />
+      </fieldset>
+
+      <fieldset class="col">
+        <label for="email" id="email-label">Email</label>
+        <input name="email" class="input input--text" id="email" type="email" aria-labelledby="email-label" required />
+      </fieldset>
+    </div>
+    <div class="form__two-col">
+      <fieldset class="col">
+        <label for="phone" id="phone-label">Phone Number</label>
+        <input name="phone" class="input input--text" id="phone" type="tel" aria-labelledby="phone-label" required />
+      </fieldset>
+
+      <fieldset class="col">
+        <label for="address" id="address-label">Address</label>
+        <input name="address" class="input input--text" id="address"  aria-labelledby="address-label" required />
+      </fieldset>
+    </div>
+
+    <fieldset class="form__one-col">
+      <label class="textarea-label" for="megatext" id="megatext-label">Comments</label>
+      <textarea name="megatext" id="megatext" aria-labelledby="megatext-label" required></textarea>
+    </fieldset>
+
+    <fieldset class="text-align--center order__submit">
+      {{#>@button variant="primary" href="#"}}Submit{{/@button}}
+    </fieldset>
+  </form>

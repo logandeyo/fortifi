@@ -1,0 +1,24 @@
+.accordion-group {
+  .accordion-control {
+    display: block;
+  }
+
+  & + .accordion-group {
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+  }
+
+  &:last-of-type {
+    margin-bottom: 3rem;
+
+    @media (--medium) {
+      margin-bottom: 6rem;
+    }
+  }
+
+ .heading{
+   text-align: center;
+   margin-top: 2rem;
+   margin-bottom: 3rem;
+ }
+}

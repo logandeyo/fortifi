@@ -1,0 +1,28 @@
+title: '_Open Graph'
+hide: true
+sections:
+  main:
+    display: Main
+    fields:
+      section_open_graph:
+        type: section
+        instructions: |
+          Open Graph allows integration between a website and Facebook and other social sites. By integrating Open Graph meta tags into your page's content, you can identify which elements of your page you want to show when someone share's your page.
+          These will be used on every page unless explicitly overridden.
+        display: 'Open Graph'
+      og_image:
+        container: main
+        folder: img
+        restrict: false
+        max_files: 1
+        mode: grid
+        type: assets
+        instructions: 'Image to be displayed on social media when shared:'
+        width: 50
+        display: 'og:image'
+      og_description:
+        type: textarea
+        instructions: 'A brief description of the content, usually between 2 and 4 sentences'
+        display: 'og:description'
+        width: 50
+taxonomies: false

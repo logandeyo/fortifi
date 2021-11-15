@@ -1,0 +1,57 @@
+
+{{ form:create in="contact__footer"  attr="class:rhythm" }}
+
+  {{ if success }}
+    {{ relate:footer_form:thank_you_page scope="tag"  }}
+      {{ redirect to="{{ tag:url }}" }}
+    {{ /relate:footer_form:thank_you_page }}
+  {{ /if }}
+
+  {{ if errors }}
+    <ul class="error">
+      {{ errors }}
+        <li> * {{ value }}</li>
+      {{ /errors }}
+    </ul>
+  {{ /if }}
+
+
+    <fieldset class="a11y-visually-hidden">
+      <label for="favoritedog" id="favoritedog-label">Favorite Dog?</label>
+      <input name="favoritedog" class="input input--text" id="favoritedog" type="text" aria-labelledby="favoritedog-label" autocomplete="new-password"/>
+    </fieldset>
+
+    <div class="form__two-col">
+      <fieldset class="col">
+        <label for="contact" id="contact-label">{{ footer_form:full_name_label }}</label>
+        <input name="name" value="{{ old:name }}" class="input input--text" id="contact" type="text" aria-labelledby="contact-label" required />
+      </fieldset>
+
+      <fieldset class="col">
+        <label for="email" id="email-label">{{ footer_form:email_label }}</label>
+        <input name="email" value="{{ old:email }}" class="input input--text" id="email" type="email" aria-labelledby="email-label" required />
+      </fieldset>
+    </div>
+
+    <div class="form__two-col">
+      <fieldset class="col">
+        <label for="phone" id="phone-label">{{ footer_form:phone_label }}</label>
+        <input name="phone" value="{{ old:phone }}" class="input input--text" id="phone" type="tel" aria-labelledby="phone-label" required />
+      </fieldset>
+
+      <fieldset class="col">
+        <label for="address" id="address-label">{{ footer_form:address_label }}</label>
+        <input name="address" value="{{ old:address }}" class="input input--text" id="address" aria-labelledby="address-label" required />
+      </fieldset>
+    </div>
+
+    <fieldset class="form__one-col">
+      <label class="textarea-label" for="megatext" id="megatext-label">{{ footer_form:comments_label }}</label>
+      <textarea name="megatext" id="megatext" aria-labelledby="megatext-label" required>{{ old:megatext }}</textarea>
+    </fieldset>
+
+    <fieldset class="text-align--center order__submit">
+      <button class="button button--link button--primary button--size-default" type="submit">{{ footer_form:button_text }}</button>
+    </fieldset>
+
+{{ /form:create }}

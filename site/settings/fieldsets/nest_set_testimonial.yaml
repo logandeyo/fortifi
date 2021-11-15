@@ -1,0 +1,16 @@
+sections:
+  main:
+    display: Main
+    fields:
+      quote:
+        restrict_assets: true
+        type: redactor
+        display: Quote
+        settings: Blockquote
+      author:
+        type: text
+        instructions: 'The quotee being referenced'
+        display: Author
+taxonomies: false
+hide: true
+title: '_nest-set Testimonial'

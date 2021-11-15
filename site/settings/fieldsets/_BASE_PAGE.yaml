@@ -1,0 +1,40 @@
+sections:
+  main:
+    display: Main
+    fields:
+      fieldset:
+        type: fieldset
+        width: 50
+        display: Fieldset
+      template:
+        type: template
+        width: 50
+        display: Template
+      partialpage_head:
+        fieldset: page_head
+        type: partial
+        display: Page Head
+      section_page_stuff:
+        type: section
+        display: Page Stuff
+  sidebar:
+    display: Sidebar
+    fields:
+      partial_page_metadata:
+        fieldset: page_metadata
+        type: partial
+        display: 'Page Metadata'
+  metadata:
+    display: Metadata
+    fields:
+      partial_seo_metadata:
+        fieldset: seo_metadata
+        type: partial
+        display: Metadata
+      partial_open_graph:
+        fieldset: open_graph
+        type: partial
+        display: Open Graph
+taxonomies: false
+hide: true
+title: BASE PAGE

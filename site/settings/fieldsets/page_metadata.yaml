@@ -1,0 +1,30 @@
+sections:
+  sidebar:
+    display: sidebar
+    fields:
+      edit_navigation_options:
+        type: revealer
+        display: 'Edit Navigation Options'
+      navigation_title:
+        type: text
+        instructions: 'Overrides standard page title in main navigation'
+        display: 'Navigation Title'
+        show_when:
+          edit_navigation_options: true
+      navigation_class:
+        type: text
+        instructions: 'css classname/s for nav link'
+        display: 'Navigation Class'
+        show_when:
+          edit_navigation_options: true
+      navigation_hide_me:
+        type: toggle
+        instructions: 'Man Nav will ignore this page if set'
+        display: 'Main Nav - Hide Me'
+      footer_navigation_hide_me:
+        type: toggle
+        instructions: 'Footer Nav will ignore this page if set'
+        display: 'Footer Nav - Hide Me'
+taxonomies: true
+title: '_Page Metadata'
+hide: true

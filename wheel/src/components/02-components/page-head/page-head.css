@@ -1,0 +1,73 @@
+.page-head {
+  margin-bottom: 3.5rem;
+  min-height: 30vh;
+  padding: 7rem 0 0;
+  position: relative;
+
+  &__has-bottom-padding{
+     padding-bottom: 3rem;
+   }
+
+  &__heading {
+    padding: 0 5rem 5rem 0;
+
+    @media (--medium) {
+      max-width: 760px;
+      padding: 0 0 5rem;
+    }
+  }
+
+  &__image {
+    margin: 0 auto;
+    max-width: 1350px;
+    position: relative;
+
+    &::before {
+      background-image: url(/images/hero_caret.svg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: '';
+      display: block;
+      height: 108px;
+      position: absolute;
+      right: 2rem;
+      transition: 0.2s ease-in;
+      top: -54px;
+      width: 81px;
+
+      @media (--large) {
+        height: 324px;
+        top: -162px;
+        width: 245px;
+      }
+    }
+  }
+
+  &__cta {
+    align-items: center;
+    background-color: var(--color-navy);
+    color: var(--color-white);
+    display: flex;
+    font-weight: var(--font-weight--bold);
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding: 1rem 2rem;
+
+    @media (--medium) {
+      bottom: -48px;
+      font-size: 1.6rem;
+      margin: 0;
+      min-height: 96px;
+      padding: 1rem 4rem;
+      position: absolute;
+      right: 2rem;
+      text-align: center;
+      width: 750px;
+    }
+
+    a {
+      color: var(--color-lime);
+    }
+  }
+}

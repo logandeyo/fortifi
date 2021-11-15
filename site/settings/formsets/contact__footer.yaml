@@ -1,0 +1,26 @@
+title: 'Contact Footer'
+honeypot: favoritedog
+fields:
+  name:
+    display: Name
+    validate: 'required|min:2'
+  email:
+    display: Email
+    validate: required|email
+  phone:
+    display: 'Phone Number'
+  address:
+    display: Address
+    validate: required
+  megatext:
+    display: Comments
+columns:
+  - name
+  - email
+  - phone
+  - address
+  - megatext
+email:
+  -
+    to: damian@turnwith.us
+    subject: 'FortiFi :: Contact'

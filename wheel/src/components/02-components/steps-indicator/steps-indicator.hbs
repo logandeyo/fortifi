@@ -1,0 +1,25 @@
+<div class="wrapper wrapper--relative rhythm">
+  <div class="steps-decor">
+    <div class="wrapper wrapper--small">
+      {{#>@heading variant="h3" tagName="h3" className="text-align--center"}}STEPS{{/@heading}}
+
+      <div class="steps">
+        {{#>@card className="steps__item rhythm"}}
+          <div class="steps__heading-halo">
+            {{#>@heading variant="h3" tagName="h3" className="steps__heading"}}1{{/@heading}}
+          </div>
+        {{/@card}}
+        {{#>@card className="steps__item  rhythm"}}
+          <div class="steps__heading-halo steps__active">
+            {{#>@heading variant="h3" tagName="h3" className="steps__heading"}}2{{/@heading}}
+          </div>
+        {{/@card}}
+        {{#>@card className="steps__item rhythm"}}
+          <div class="steps__heading-halo">
+            {{#>@heading variant="h3" tagName="h3" className="steps__heading"}}3{{/@heading}}
+          </div>
+        {{/@card}}
+      </div><!--/ steps -->
+    </div><!--/ wrapper small -->
+  </div><!--/ steps-decor -->
+</div><!--/ wrapper -->

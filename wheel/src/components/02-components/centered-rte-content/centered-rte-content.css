@@ -1,0 +1,9 @@
+.centered-rte-content {
+  padding: 2rem 0;
+  text-align: center;
+
+  @media (--medium) {
+    margin-bottom: 2rem;
+    padding: 3rem 0;
+  }
+}

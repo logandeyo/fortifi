@@ -1,0 +1,3 @@
+title: 'Error Content - 404'
+fieldset: error_page
+template: errors/404

@@ -1,0 +1,14 @@
+:root {
+  /* Individual font names */
+  --font-name--default: 'Archivo';
+  --font-name--alt: 'Georgia';
+
+  /* font stacks */
+  --font-stack--default: var(--font-name--default), sans-serif;
+  --font-stack--alt: var(--font-name--default), 'Garamond', serif;
+
+  /* property-set defining the light font-face */
+  --font-weight--thin: 300;
+  --font-weight--normal: 400;
+  --font-weight--bold: 700;
+}

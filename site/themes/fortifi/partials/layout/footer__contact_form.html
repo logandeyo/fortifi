@@ -1,0 +1,34 @@
+<section class="form-footer" id="get-started">
+  <div class="form-footer__filler">
+  <div class="wrapper--no-padding">
+    <figure class="form-footer__figure">
+      {{ partial:image source="{footer_form.background_image}" class="form-footer__image" }}
+      <div class="wrapper wrapper--small wrapper--no-padding">
+        <figcaption class="form-footer__caption">
+          <div class="form-footer__heading rhythm--small">
+            <h2 class="heading heading--h1">{{ footer_form.marquee-heading }}</h2>
+            <h4 class="heading heading--h3">{{ footer_form.marquee-sub-heading }}</h4>
+          </div><!--/ __heading -->
+          <div class="form-footer__content">
+            <ul class="list list--plain form-footer__list rhythm">
+              {{ footer_form.list_content }}
+                <li class="form-footer__list-item">{{ list_item }}</li>
+              {{ /footer_form.list_content }}
+            </ul>
+          </div><!--/ __content -->
+        </figcaption><!--/ __caption -->
+      </div><!--/ wrapper--small -->
+    </figure>
+  </div><!--/ wrapper--large -->
+
+  <div class="wrapper wrapper--small">
+    <div class="rhythm rich-text form-intro">
+      <h3 class="heading heading--h3">{{ footer_form.heading }}</h3>
+      {{ footer_form.content }}
+    </div>
+
+    {{ partial:forms/salesforce/get-started/form }}
+
+  </div><!--/ wrapper--small -->
+  </div><!--/ form-footer__filler -->
+</section>

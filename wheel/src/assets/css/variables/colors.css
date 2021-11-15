@@ -1,0 +1,27 @@
+:root {
+  /* grayscale alias */
+  --color-white: #fff;
+  --color-gray-5: rgb(242, 242, 242);
+  --color-gray-4: rgb(220, 220, 220);
+  --color-gray-3: rgb(175, 175, 175);
+  --color-gray-2: rgb(99, 99, 99);
+  --color-gray-1: rgb(43, 43, 43);
+  --color-gray: var(--color-gray-1);
+
+  /* general colors */
+  --color-text: rgb(39, 52, 60);
+
+  /*  PRIMARY COLORS  */
+  --color-navy: rgb(0, 48, 58);
+  --color-surf: rgb(0, 151, 139);
+
+  /*  SECONDARY COLORS  */
+  --color-lime: rgb(168, 207, 67);
+  --color-mist: rgb(205, 233, 223);
+  --color-ocean: rgb(4, 113, 98);
+  --color-sky: rgb(0, 189, 218);
+  --color-error: rgb(207, 69, 32);
+
+  /* gradients */
+  --color-gradient: linear-gradient(to right, var(--color-surf), var(--color-sky));
+}

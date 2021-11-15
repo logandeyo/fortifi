@@ -1,0 +1,54 @@
+<div class="global-header">
+  <div class="global-header__contact">
+    <div class="wrapper">
+      <nav>
+        <a href="tel:{{ organization_metadata.telephone | macro:tel_formatting }}">
+          {{ organization_metadata.telephone }}
+        </a>
+        <a href="mailto:info@fortifi.com">info@fortifi.com</a>
+        <a href="/login" class="login">Login</a>
+      </nav>
+    </div>
+  </div>
+
+
+
+
+  <div class="wrapper">
+    <div class="global-header__wrap">
+    <a href="/" class="brand">
+      <img src="/images/fortifi-logo.svg" alt="FortiFi logo" >
+    </a>
+
+      <nav class="global-nav js-global-nav">
+        <ul class="nav js-nav">
+          {{ nav from="/" include_home="true" scope="tag" navigation_hide_me:isnt="true"}}
+            <li class="nav__item ">
+              <a href="{{ tag:navigation_link or url }}" class="{{ tag:navigation_class or 'nav__link' }} {{ if is_current || is_parent }}active{{ /if }}">
+                {{ tag:navigation_title or title }}
+              </a>
+            </li>
+          {{ /nav }}
+
+          <li class="nav__item nav__item--mobile">
+            <a class="nav__link" href="tel:{{ organization_metadata.telephone | macro:tel_formatting }}">{{ organization_metadata.telephone }}</a>
+          </li>
+          <li class="nav__item nav__item--mobile">
+            <a class="nav__link" href="mailto:info@fortifi.com">info@fortifi.com</a>
+          </li>
+          <li class="nav__item nav__item--mobile">
+            <a class="nav__link login" href="/login">Login</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <button class="nav__toggle js-nav-toggle">
+        <span class="a11y-visually-hidden">Menu</span>
+        <i></i>
+      </button>
+    </div>
+    <!--/ __wrap -->
+  </div>
+  <!--/ wrapper -->
+</div>

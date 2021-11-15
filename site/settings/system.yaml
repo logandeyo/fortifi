@@ -1,0 +1,102 @@
+license_key: 4eea43c7-4424-4682-aec6-31e03b5d45fb
+locales:
+  en:
+    name: English
+    full: en_US
+    url: /
+timezone: UTC
+date_format: 'F jS, Y'
+default_extension: md
+filesystems:
+  content:
+    driver: local
+    root: site/content
+  storage:
+    driver: local
+    root: site/storage
+  users:
+    driver: local
+    root: site/users
+  themes:
+    driver: local
+    root: site/themes
+    url: /site/themes
+app_key: bg998jsYObqZqWX029osfmyLVdOw31Ej
+redactor:
+  -
+    name: Standard
+    settings:
+      buttons:
+        - bold
+        - italic
+        - link
+        - unorderedlist
+        - html
+      plugins:
+        - definedlinks
+        - imagelinks
+      definedLinks: /cp/addons/page-links/pages/get
+  -
+    name: 'Standard - Blurb'
+    settings:
+      buttons:
+        - bold
+        - italic
+        - link
+        - unorderedlist
+        - html
+      plugins:
+        - definedlinks
+        - imagelinks
+      definedLinks: /cp/addons/page-links/pages/get
+      minHeight: 100
+      maxHeight: 250
+  -
+    name: 'Standard - Blurb_short'
+    settings:
+      buttons:
+        - bold
+        - italic
+        - link
+        - unorderedlist
+        - html
+      plugins:
+        - definedlinks
+        - imagelinks
+      definedLinks: /cp/addons/page-links/pages/get
+      minHeight: 50
+      maxHeight: 150
+
+  -
+    name: 'Basic - Blurb'
+    settings:
+      buttons:
+        - bold
+        - italic
+        - link
+        - html
+      plugins:
+        - definedlinks
+        - imagelinks
+      definedLinks: /cp/addons/page-links/pages/get
+      minHeight: 100
+      maxHeight: 250
+  -
+    name: Blockquote
+    settings:
+      buttons:
+        - bold
+        - italic
+        - link
+        - html
+      plugins:
+        - definedlinks
+        - imagelinks
+      definedLinks: /cp/addons/page-links/pages/get
+      minHeight: 55
+      maxHeight: 150
+yaml_parser: symfony
+send_powered_by_header: false
+ensure_unique_ids: true
+csrf_exclude: {  }
+php_max_memory_limit: null

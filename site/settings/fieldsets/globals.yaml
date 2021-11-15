@@ -1,0 +1,36 @@
+id: 7b55e8fa-23a5-41ed-959e-76a63ab84aab
+sections:
+  main:
+    display: Main
+    fields:
+      partial_opengraph:
+        fieldset: global_open_graph
+        type: partial
+        display: OpenGraph
+  footer:
+    display: Footer
+    fields:
+      section_copyright_language:
+        type: section
+        instructions: |
+          Legal stuff in footer.
+          &copy; _{year}_ updates automatically.
+        display: 'Copyright Language'
+      copyright_formality:
+        type: text
+        instructions: 'Language appended to the footer following the _copyright + year_'
+        localizable: true
+        display: 'Copyright Formality'
+      footer_legal_links:
+        max_items: 3
+        mode: panes
+        type: pages
+        display: 'Footer Legal Links'
+      legal_disclaimers:
+        type: text
+        instructions: 'Language to follow legal links'
+        localizable: true
+        display: 'Additional Legal Disclaimers'
+taxonomies: false
+hide: true
+title: Global

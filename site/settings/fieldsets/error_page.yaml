@@ -1,0 +1,20 @@
+sections:
+  main:
+    display: Main
+    fields:
+      readme:
+        type: section
+        instructions: |
+          **This is used for creating responses whenever a page is not found.**
+
+          **The entries in this collection will be randomly pulled and displayed whenever is apropriatte.**
+
+          _You can create as many of these pages as you like, or, you can stick with just one - your choice!_
+        display: README
+      partial_page_head:
+        fieldset: page_head
+        type: partial
+        display: 'Page Head'
+taxonomies: false
+hide: true
+title: 'Error Page'

@@ -1,0 +1,21 @@
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {{ nav from="/" include_home="true" include_in_sitemap_xml:isnt="false" }}
+    <url>
+      <loc>{{ permalink }}</loc>
+      <lastmod>{{ last_modified format="Y-m-d" }}</lastmod>
+    <priority>{{ if url == homepage }}0.8{{ else }}0.5{{ /if }}</priority>
+    </url>
+    {{ if mount }}
+      {{ collection :from="mount" include_in_sitemap_xml:isnt="false" }}
+        <url>
+          <loc>{{ permalink }}</loc>
+          <lastmod>{{ last_modified format="Y-m-d" }}</lastmod>
+          <priority>0.5</priority>
+        </url>
+      {{ /collection }}
+    {{ /if }}
+    {{ if children }}
+      {{ *recursive children* }}
+    {{ /if }}
+  {{ /nav }}
+  </urlset>

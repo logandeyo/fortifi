@@ -1,0 +1,30 @@
+sections:
+  main:
+    display: Main
+    fields:
+      partial_nest:
+        fieldset: nest_legal
+        type: partial
+        display: Nest
+  sidebar:
+    display: Sidebar
+    fields:
+      partial_page_metadata:
+        fieldset: page_metadata
+        type: partial
+        display: 'Page Metadata'
+  metadata:
+    display: Metadata
+    fields:
+      partial_seo_metadata:
+        fieldset: seo_metadata
+        type: partial
+        display: Metadata
+      partial_open_graph:
+        fieldset: open_graph
+        type: partial
+        display: 'Open Graph'
+taxonomies: false
+fieldset: legal_page
+template: legal_page
+title: 'Legal Page'

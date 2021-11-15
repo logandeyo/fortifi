@@ -1,0 +1,17 @@
+.text-size {
+  &--xsmall {
+    font-size: var(--text-size--xsmall);
+  }
+
+  &--small {
+    font-size: var(--text-size--small);
+  }
+
+  &--default {
+    font-size: var(--text-size--default);
+  }
+
+  &--large {
+    font-size: var(--text-size--large);
+  }
+}

@@ -1,0 +1,92 @@
+.apply-now-modal,
+.modal {
+  &__close {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 3rem;
+    padding: 0;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 3rem;
+
+    &::after,
+    &::before {
+      background-color: gray;
+      content: '';
+      display: block;
+      position: absolute;
+      transform-origin: center;
+      top: 1.375rem;
+      left: 0.5rem;
+      height: 3px;
+      width: 2rem;
+    }
+
+    &::after {
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__dialog {
+    background-color: var(--color-white);
+    border: none;
+    bottom: 2rem;
+    left: 1rem;
+    margin: 0;
+    max-height: 100vh;
+    overflow-y: auto;
+    padding: 2rem;
+    position: fixed;
+    top: 2rem;
+    width: calc(100vw - 2rem);
+    z-index: calc(var(--zindex--modal) + 1);
+  @media (--medium-large) {
+    bottom: unset;
+    left: calc(50% - 29rem);
+    max-width: 58rem;
+    top: 8rem;
+  }
+
+  &[open] {
+     display: block;
+   }
+  }
+
+  &__footer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    .modal__consent {
+      display: inline-block;
+    }
+  }
+
+  &__overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: var(--zindex--modal);
+  }
+}
+
+.modal[aria-hidden='true'] {
+  display: none;
+}
+
+[data-a11y-dialog-native] > .modal__overlay {
+  display: none;
+}
+
+.modal__dialog[open] + &__overlay {
+  display: inline-block;
+}

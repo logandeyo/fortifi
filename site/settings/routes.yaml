@@ -1,0 +1,11 @@
+routes:
+  /sitemap.xml:
+    layout: xml_sitemap
+    content_type: xml
+  /sitemap:
+    template: sitemap
+    title: Sitemap
+redirect:
+  /terms-of-use: /terms-of-service
+  /faq: /faqs
+  /about-us: /about

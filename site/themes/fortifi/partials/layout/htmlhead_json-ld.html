@@ -1,0 +1,48 @@
+<!-- site’s name, logo, and social links  -->
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "@id": "{{ organization_metadata.business_id }}",
+  "name": "{{ organization_metadata.name }}",
+  "url": "{{ permalink }}",
+{{ if organization_metadata.company_logo }}
+  "logo": "{{ session:current_fqdn }}{{ organization_metadata.company_logo }}",
+{{ /if }}
+
+  "sameAs": [
+    {{ organization_metadata.instagram_url ensure_right="\"," ensure_left="\"" }}
+    {{ organization_metadata.twitter_url ensure_right="\"," ensure_left="\"" }}
+    {{ organization_metadata.youtube_url ensure_right="\"," ensure_left="\"" }}
+    {{ organization_metadata.linkedin_url ensure_right="\"," ensure_left="\"" }}
+    {{ organization_metadata.facebook_url ensure_right="\"" ensure_left="\"" }}
+  ],
+  "address":{
+    "@type": "PostalAddress",
+    "streetAddress": "{{ organization_metadata.address_streetaddress }} {{ organization_metadata.address_streetaddress_unit }}",
+    "addressLocality": "{{ organization_metadata.address_addresslocality }}",
+    "addressRegion": "{{ organization_metadata.address_addressregion }}",
+    "postalCode": "{{ organization_metadata.address_postalcode }}",
+    "addressCountry": "{{ organization_metadata.address_addresscountry }}"
+  },
+  "telephone": "{{ organization_metadata.telephone }}"
+}
+</script>
+
+<!-- breadcrumbs  -->
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+ {{  nav:breadcrumbs include_home="false" scope="tag" }}
+  {
+    "@type": "ListItem",
+    "position": "{{ count }}",
+    "name": "{{ tag:navigation_title or title }}",
+    "item": "{{ permalink }}"
+  }{{ unless  is_current }},{{ /unless }}
+   {{ /nav:breadcrumbs }}
+  ]
+}
+</script>

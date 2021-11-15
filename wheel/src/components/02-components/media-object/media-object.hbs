@@ -1,0 +1,18 @@
+<div class="wrapper wrapper--relative rhythm">
+<figure class="media-object">
+  <img class="media-object__image" src="{{imgsrc}}" alt="foo">
+  <figcaption class="media-object__caption">
+    <div class="rhythm rhythm--large rich-text rich-text--large"> {{!-- required --}}
+      {{#>@heading variant="h2"}}{{heading}}{{/@heading}}
+      {{#if content}}
+        <p>{{content}}</p>
+      {{/if}}
+    </div><!--/ rich-text -->
+    {{#if ctatext}}
+    <div class="media-object__cta">
+      <a href="#" class="button button--link button--primary button--size-default">{{ctatext}}</a>
+    </div><!--/ __cta -->
+    {{/if}}
+  </figcaption>
+</figure><!--/ media-object -->
+</div>

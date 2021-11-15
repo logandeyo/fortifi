@@ -1,0 +1,6 @@
+environments:
+  - CMS_AUTHORING
+  - APPLYNOW
+git_push: true
+git_username: FortiFi-spock
+git_email: fortifi-spock@pc-pdx.com

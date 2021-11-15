@@ -1,0 +1,11 @@
+.anchor-target {
+  margin-top: 0 !important;
+
+  &::before {
+    content: ' ';
+    display: block;
+    height: 10rem;
+    margin-top: -10rem;
+    visibility: hidden;
+  }
+}

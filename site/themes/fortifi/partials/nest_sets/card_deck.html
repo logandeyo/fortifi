@@ -1,0 +1,40 @@
+<div class="card-deck-wrapper wrapper wrapper--large rhythm {{ if !last }}card-deck-wrapper--has-margin-bottom{{ /if }}">
+  {{if heading }}
+    <h2 class="heading heading--h2 color--white">{{ heading }}</h2>
+  {{ /if }}
+  <div class="card-deck">
+    <div class="wrapper rhythm--large">
+      <div class="card-deck__layout card-deck__layout{{ column_count }}">
+        {{ card_deck }}
+          {{ partial src="nest_sets/{type}" }}
+        {{ /card_deck }}
+      </div><!--/ __layout -->
+
+
+      {{ if quote }}
+      <figure class="card-deck__testimonial">
+        <blockquote class="blockquote">
+          {{ quote }}
+
+          {{ if author }}
+          <figcaption class="figcaption">{{ author }}</figcaption>
+          {{ /if }}
+        </blockquote>
+      </figure>
+      {{ /if }}
+
+
+      {{ if deck_cta_link }}
+        {{ relate:deck_cta_link scope="tag" }}
+      <div class="card-deck__cta">
+          <a href="{{ url }}" class="button button--link button--primary button--size-default">
+            {{ deck_cta_link_text or title }}
+          </a>
+      </div>
+        {{ /relate:deck_cta_link }}
+      {{ /if }}
+
+
+    </div><!--/ wrapper -->
+  </div><!--/ card-deck -->
+</div><!--/ card-deck-wrapper -->

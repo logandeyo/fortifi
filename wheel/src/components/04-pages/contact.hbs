@@ -1,0 +1,24 @@
+{{>@global-header}}
+{{#>@page-head marquee-image="/images/hero_contact.jpg"
+  h1-heading="Contact"
+  h3-heading="100% financing for energy efficiency and storm preparedness home improvement projects. "}}
+{{/@page-head}}
+
+{{#>@forms}}{{/@forms}}
+
+<div class="wrapper rhythm">
+  {{#>@heading className="text-align--center" variant="h3"}}FortiFi’s PACE Financing is available in the following <a href="#jump-to-california">California</a> and <a href="#jump-to-florida">Florida</a> communities.{{/@heading}}
+
+
+  <h2 class="heading heading--h1 text-align--center"><span id="jump-to-california" class="anchor-target"></span>California</h2>
+  {{#>@accordion-group}}{{/@accordion-group}}
+
+
+  <h2 class="heading heading--h1 text-align--center"><span id="jump-to-florida" class="anchor-target"></span>Florida</h2>
+  {{#>@accordion-group}}{{/@accordion-group}}
+
+  {{>@location-help}}
+</div><!--/ wrapper -->
+
+{{>@form-footer}}
+{{>@global-footer}}

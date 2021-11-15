@@ -1,0 +1,21 @@
+<section class="page-head">
+  <div class="wrapper">
+    <div class="page-head__heading rhythm">
+      {{#>@heading variant="h1" className="heading--h1-major"}}{{ h1-heading }}{{/@heading}}
+      {{#>@heading variant="h3"}}{{h3-heading}}{{/@heading}}
+    </div>
+  </div>
+  <div class="page-head__image">
+    <img src="{{marquee-image}}">
+  </div>
+  {{#if cta}}
+    <div class="wrapper wrapper--relative">
+      <div class="page-head__cta rich-text">
+        <p>
+          <a href="#">Click here to get started</a> or call us at <a href="tel:1-858-345-2000">1-858-345-2000</a>
+        </p>
+      </div><!--/ __cta -->
+    </div>  
+  {{/if}}
+  </div>
+</section>

@@ -1,0 +1,107 @@
+sections:
+  main:
+    display: Main
+    fields:
+      nest:
+        sets:
+          media_object:
+            display: Media-Object
+            fields:
+              partial_panel:
+                fieldset: nest_set_media-object
+                type: partial
+                display: Panel
+            instructions: 'Adds image along with heading/content +optional CTA button'
+          accordion_group:
+            display: 'Accordion Group'
+            fields:
+              heading:
+                type: text
+                display: 'Heading (optional)'
+              partial_accordion:
+                fieldset: nest_set_accordion
+                type: partial
+                display: Accordion
+            instructions: 'Adds new group of accordion items +optional group heading'
+          card_deck:
+            display: 'Card Deck'
+            fields:
+              heading:
+                type: text
+                display: 'Heading (optional)'
+              column_count:
+                options:
+                  __2col: '02 Columns'
+                  __3col: '03 Columns'
+                type: select
+                instructions: 'How many columns in which cards should be rendered on full-width screens'
+                display: 'Column Count'
+                default: __3col
+              partial_card_deck_set:
+                fieldset: nest_set_card_deck
+                type: partial
+                display: 'Card deck set'
+              section_testimonial:
+                type: section
+                instructions: '(optional) Quote with attribution - to be displayed at bottom of Card Deck'
+                display: Testimonial
+              partial_testimonial:
+                fieldset: nest_set_testimonial
+                type: partial
+                display: 'Testimonial (optional)'
+              section_cta:
+                type: section
+                instructions: '(optional) link button'
+                display: CTA
+              deck_cta_link:
+                max_items: 1
+                mode: panes
+                type: pages
+                display: 'CTA Link'
+                width: 50
+              deck_cta_link_text:
+                type: text
+                width: 50
+                display: 'CTA Link Text'
+                validate: required
+            instructions: 'Adds collection of cards +optional testimonial section'
+          stats_deck:
+            display: 'Stats Deck'
+            fields:
+              heading:
+                type: text
+                display: 'Heading (optional)'
+              partial_stats_deck:
+                fieldset: nest_set_stats_deck
+                type: partial
+                display: 'Stats Group'
+            instructions: 'Adds collection of factoids +heading'
+          contact_form:
+            display: 'Contact Form'
+            fields:
+              partial_contact_form:
+                fieldset: nest_set_contact_form
+                type: partial
+                display: 'Contact Form'
+            instructions: 'Adds contact form'
+          centered_megatext:
+            display: 'Centered MegaText'
+            fields:
+              partial_centered_content:
+                type: partial
+                display: 'Centered Content'
+                fieldset: nest_set_centered_megatext
+            instructions: 'Adds centered paragraph formatted with large font size'
+          centered_rte_content:
+            display: 'Centered RTE Content'
+            fields:
+              partial_centered_rte_content:
+                fieldset: nest_set_centered_rte_content
+                type: partial
+                display: 'Centered RTE Content'
+            instructions: 'Adds standard RTE section with heading/content,+optional CTA'
+        type: replicator
+        display: Nest
+taxonomies: false
+hide: true
+title: _Nest

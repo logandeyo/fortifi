@@ -1,0 +1,32 @@
+.list {
+  &--blank {
+    list-style: none;
+  }
+
+  &--unordered {
+    list-style-type: disc;
+    padding-left: 1em;
+  }
+
+  &--ordered {
+    list-style-type: decimal;
+    padding-left: 1em;
+  }
+
+  &--inline {
+    display: flex;
+
+    & > * + * {
+      &::before {
+        content: '\0020';
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        margin: -2px 0.5em auto;
+        height: 1.2em;
+        width: 1px;
+        background-color: gray;
+      }
+    }
+  }
+}

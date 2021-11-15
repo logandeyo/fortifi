@@ -1,0 +1,29 @@
+---
+background_image: /assets/get_started_background_new.jpg
+marquee-heading: 'Get started.'
+marquee-sub-heading: 'Find out how much you qualify for'
+list_content:
+  -
+    list_item: 'Most properties qualify'
+  -
+    list_item: '100% financing, $0 down'
+  -
+    list_item: 'No payments for 12+ months'
+  -
+    list_item: 'Approval not based on FICO score'
+  -
+    list_item: 'Hundreds of eligible improvements'
+heading: 'Don’t delay your dream project any longer.'
+thank_you_page: 45aae8eb-db3f-4291-95f8-38122bd8aaef
+full_name_label: Name
+email_label: Email
+phone_label: 'Phone Number'
+address_label: Address
+comments_label: Comments
+button_text: 'Apply Now'
+fieldset: global_footer_form
+title: 'Footer Contact Form'
+id: fa21232d-27c2-48a4-bfbe-965303a2e428
+---
+<p>Complete this form, and we’ll be in touch soon to discuss your options.
+</p>

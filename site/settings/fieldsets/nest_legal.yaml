@@ -1,0 +1,19 @@
+sections:
+  main:
+    display: Main
+    fields:
+      nest:
+        sets:
+          standard_rte_content:
+            display: 'Standard RTE Content'
+            fields:
+              partial_standard_rte_content:
+                fieldset: nest_set_standard_rte_content
+                type: partial
+                display: 'Standard RTE Content'
+            instructions: 'Adds standard RTE section with heading/content,+optional CTA'
+        type: replicator
+        display: Nest
+taxonomies: false
+hide: true
+title: '_Nest Legal'

@@ -1,0 +1,20 @@
+.bg {
+  /* grayscales */
+  &--gray { background-color: var(--color-gray); }
+  &--gray-1 { background-color: var(--color-gray-1); }
+  &--gray-2 { background-color: var(--color-gray-2); }
+  &--gray-3 { background-color: var(--color-gray-3); }
+  &--gray-4 { background-color: var(--color-gray-4); }
+  &--gray-5 { background-color: var(--color-gray-5); }
+
+  /* colors */
+  &--lime { background-color: var(--color-lime); }
+  &--mist { background-color: var(--color-mist); }
+  &--navy { background-color: var(--color-navy); }
+  &--ocean { background-color: var(--color-ocean); }
+  &--sky { background-color: var(--color-sky); }
+  &--error { background-color: var(--color-error); }
+
+  /* gradient */
+  &--gradient { background-image: var(--color-gradient); }
+}

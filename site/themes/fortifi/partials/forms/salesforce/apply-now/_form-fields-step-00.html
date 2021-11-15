@@ -1,0 +1,56 @@
+{{#
+via :: https://projects.invisionapp.com/d/main#/console/18021689/405893142/preview
+#}}
+<fieldset class="apply-now-form__fieldset form--validate" id="apply-now-form__00">
+  <div class="form__two-col">
+    <div class="col">
+      <div class="input__group">
+        <label for="00Nf400000UV6Ao">Property Address</label>
+        <input  id="00Nf400000UV6Ao" value="{{ get:Address_Line__c | sanitize }}" maxlength="50" name="00Nf400000UV6Ao" type="text" class="input input--text" required />
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="input__group">
+        <label for="state">State</label>
+        <select id="state" name="state" title="State" class="input input--select apply-now__state-select" required>
+          <option value="" >--Select One--</option>>
+          <option value="CA" {{ if {get:state} == "CA" }}selected{{ /if }}>California</option>
+          <option value="FL" {{ if {get:state} == "FL" }}selected{{ /if }}>Florida</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="form__two-col">
+    <div class="col">
+      <div class="input__group">
+        <label for="00N5G00000VL3L6">Address line 02</label>
+        <input id="00N5G00000VL3L6"  value="{{ get:Address_Line_2__c | sanitize }}" maxlength="50" name="00N5G00000VL3L6" type="text"  class="input input--text"/>
+      </div>
+    </div>
+    <div class="col">
+      <div class="input__group">
+        <label for="zip">Zip</label>
+        <input id="zip" value="{{ get:zip | sanitize }}" maxlength="20" name="zip" type="text" class="input input--text" required />
+      </div>
+    </div>
+  </div>
+
+  <div class="form__two-col">
+    <div class="col">
+      <div class="input__group">
+        <label for="city">City</label>
+        <input  id="city" value="{{ get:city | sanitize }}" maxlength="25" name="city" type="text" class="input input--text" required />
+      </div>
+    </div>
+    <div class="col">
+      <label>
+        {{ geographic_availability_statement }}
+      </label>
+    </div>
+  </div>
+  <div class="text-align--center order__submit">
+    <input class="button text--align-center button--primary button--size-default apply-now__submit-00 js-next-pg-button" value="Get Started" >
+  </div>
+</fieldset>

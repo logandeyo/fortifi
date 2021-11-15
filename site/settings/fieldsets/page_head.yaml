@@ -1,0 +1,45 @@
+sections:
+  main:
+    display: Main
+    fields:
+      title:
+        type: text
+        instructions: |
+          This is what shows on the browser tab.
+          It also creates the 'slug' (url)
+        localizable: true
+        display: Title
+      section_page_hero:
+        type: section
+        display: Marquee
+        instructions: 'Centered heading + intro texts'
+      hero_heading:
+        type: text
+        display: Heading
+        validate: required
+        localizable: true
+      hero_content:
+        settings: 'Standard - Blurb'
+        restrict_assets: true
+        type: redactor
+        display: Intro
+        localizable: true
+      image:
+        container: main
+        folder: marquee
+        restrict: true
+        max_files: 1
+        mode: grid
+        type: assets
+        display: Image
+        width: 50
+      action_overlay:
+        settings: 'Basic - Blurb'
+        restrict_assets: false
+        type: redactor
+        instructions: 'Optional Rich Text area to callout fun stuff'
+        display: 'Action Overlay (optional)'
+        width: 50
+taxonomies: false
+hide: true
+title: '_Page Head'

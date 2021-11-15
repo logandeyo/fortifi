@@ -1,0 +1,18 @@
+sections:
+  main:
+    display: Main
+    fields:
+      stats_deck:
+        sets:
+          stats_card:
+            display: Stat
+            fields:
+              stat:
+                fieldset: nest_set_stats_card
+                type: partial
+                display: Stat
+        type: replicator
+        display: 'Stats Replicator'
+taxonomies: false
+hide: true
+title: '_nest-set Stats Deck'

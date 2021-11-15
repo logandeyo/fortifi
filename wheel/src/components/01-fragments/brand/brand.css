@@ -1,0 +1,16 @@
+.brand {
+  display: inline-block;
+  width: 106px;
+
+  @media (--medium-large) {
+    width: 170px;
+  }
+
+  &--large {
+    width: 170px;
+  }
+
+  img {
+    max-width: 300px;
+  }
+}

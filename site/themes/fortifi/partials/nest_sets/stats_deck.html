@@ -1,0 +1,19 @@
+<div class="wrapper wrapper--relative rhythm">
+  <div class="stats-decor">
+    <div class="wrapper wrapper--small">
+      {{if heading }}
+        <h3 class="heading heading--h3 text-align--center">{{ heading }}</h3>
+      {{ /if }}
+
+      <div class="stats">
+        {{ stats_deck }}
+         {{ partial src="nest_sets/{type}" }}
+        {{ /stats_deck }}
+      </div>
+      <!--/ stats -->
+    </div>
+    <!--/ wrapper small -->
+  </div>
+  <!--/ stats-decor -->
+</div>
+<!--/ wrapper -->

@@ -1,0 +1,19 @@
+sections:
+  main:
+    display: Main
+    fields:
+      heading:
+        type: text
+        display: Heading
+      listings:
+        type: list
+        display: Listings
+        instructions: 'Auto-formatted list will be split into columns for consistent rendering style'
+      content:
+        settings: Blockquote
+        restrict_assets: false
+        type: redactor
+        display: 'Extra Notes (optional)'
+taxonomies: false
+title: '_nest-set Accordion Item'
+hide: true

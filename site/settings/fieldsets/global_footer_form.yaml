@@ -1,0 +1,39 @@
+sections:
+  main:
+    display: Main
+    fields:
+      background_image:
+        container: main
+        folder: /
+        restrict: false
+        max_files: 1
+        mode: grid
+        type: assets
+        display: 'Background Image'
+      marquee-heading:
+        type: text
+        display: Heading
+        default: 'Get Started.'
+      marquee-sub-heading:
+        type: text
+        display: Sub-Heading
+      list_content:
+        mode: table
+        max_rows: 7
+        fields:
+          list_item:
+            type: text
+            instructions: 'Text that will be auto-formatted into a fancy looking list'
+            display: 'List Item'
+        type: grid
+        display: 'List Content'
+  form_config:
+    display: 'Form Config'
+    fields:
+      partial_form_config:
+        fieldset: nest_set_contact_form
+        type: partial
+        display: 'Form Config'
+taxonomies: false
+hide: true
+title: '__global Footer Form'

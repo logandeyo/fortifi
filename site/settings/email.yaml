@@ -1,0 +1,3 @@
+driver: sendmail
+from_email: no-reply+statamic@turnwith.us
+from_name: 'FortiFi Website'

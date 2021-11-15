@@ -1,0 +1,12 @@
+sections:
+  main:
+    display: Main
+    fields:
+      content:
+        settings: 'Standard - Blurb'
+        restrict_assets: false
+        type: redactor
+        display: Content
+taxonomies: false
+hide: true
+title: '_nest-set Centered MegaText'
